@@ -120,7 +120,7 @@ section:hover {
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
-    padding: 12px 18px;
+    padding: 6px 10px;
     background: rgba(0, 123, 255, 0.1);
     border-radius: 8px;
     transition: 0.3s;
@@ -138,4 +138,52 @@ footer {
     margin-top: 50px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
+}
+
+
+/* Mobile Responsiveness - Adjustments for Small Screens */
+@media (max-width: 768px) {
+
+    /* Fix Navbar Layout */
+    nav ul {
+        display: flex;
+        flex-direction: column;  /* Stack nav items */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 8px;  /* Adds space between buttons */
+    }
+
+    nav ul li a {
+        display: block;
+        width: 120px;  /* Uniform button width */
+        text-align: center;
+        padding: 10px 15px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+    }
+
+    nav ul li a:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Expand Project Section */
+    .project {
+        max-width: 95%;  /* Gives it more space */
+        padding: 20px;
+    }
+
+    /* Make Contact Section Links Smaller */
+    #contact a {
+        font-size: 1em;  /* Reduce font size */
+        padding: 8px 12px;
+    }
+
+    /* Fix Footer for Mobile */
+    footer {
+        text-align: center;
+        font-size: 0.85em;
+        padding: 15px;
+    }
 }
