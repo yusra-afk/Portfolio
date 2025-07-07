@@ -285,3 +285,37 @@ body.light-mode #dark-mode-toggle:hover {
     padding: 10px 12px;
   }
 }
+.astro-cat {
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+    background: white;
+    padding: 4px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .astro-cat:hover {
+    animation: wiggle 0.4s ease-in-out;
+  }
+  
+  @keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  .cat-bubble {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 14px;
+    font-size: 0.9rem;
+    max-width: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease;
+    opacity: 1;
+  }
