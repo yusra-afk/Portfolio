@@ -1,68 +1,58 @@
+<!-- ✅ Revised index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yusra Ashar</title>
+  <title>Yusra Ashar | Portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
 
-  <header>
-    <h1>Yusra Ashar</h1>
-    <p>Aspiring Software Engineer | CSUMB Otter!</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Yusra Ashar 👩‍💻</h1>
+      <p>Aspiring Software Engineer | CSUMB Otter</p>
+      <div class="cta-buttons">
+        <a href="#about" class="cta">About Me</a>
+        <a href="#contact" class="cta">Contact</a>
+        <a href="#" class="cta secondary">Explore Courses</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">⬇️</div>
+  </section>
 
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li class="dropdown">
-          <a href="#">Courses</a>
-          <ul class="dropdown-content">
-            <li><a href="courses/cst300.html">CST 300 - Major ProSeminar</a></li>
-            <li><a href="courses/cst338.html">CST 338 - Software Design</a></li>
-            <li><a href="courses/cst334.html">CST 334 - Operating Systems</a></li>
-            <li><a href="courses/cst363.html">CST 363 - Databases</a></li>
-            <li><a href="courses/cst311.html">CST 311 - Computer Networks</a></li>
-            <li><a href="courses/cst336.html">CST 336 - Internet Programming</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+  <!-- About Section -->
+  <section id="about" class="card-section">
+    <h2>About Me</h2>
+    <p>
+      I'm a Computer Science student at California State University Monterey Bay.
+      I love turning complex ideas into interactive web experiences. I created this site to
+      document my growth, projects, and code-filled journey through tech!
+    </p>
+  </section>
 
-    <button id="dark-mode-toggle">🌑 Dark Mode</button>
-  </header>
+  <!-- Contact Section -->
+  <section id="contact" class="card-section">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:yusraashar@gmail.com">yusraashar@gmail.com</a></p>
+    <p>Phone: <a href="tel:+13235466675">+1 (323) 546-6675</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/yusra-ashar-/-">linkedin.com/in/yusra-ashar</a></p>
+    <p>GitHub: <a href="https://github.com/yusra-afk">github.com/yusra-afk</a></p>
+  </section>
 
-  <main>
-    <section id="about">
-      <h2>All About Me</h2>
-      <p>
-        I'm a Computer Science student at California State University Monterey Bay,
-        passionate about web development and problem-solving. I created this site to share my academic journey,
-        coursework, and growth as a developer.
-      </p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:yusraashar@gmail.com">yusraashar@gmail.com</a></p>
-      <p>Phone: <a href="tel:+13235466675">+1 (323) 546-6675</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/yusra-ashar-/-">linkedin.com/in/yusra-ashar</a></p>
-      <p>GitHub: <a href="https://github.com/yusra-afk">github.com/yusra-afk</a></p>
-    </section>
-  </main>
-
+  <!-- Yusha the Cat -->
   <div id="cat-guide">
     <img src="images/space_cat.png" alt="Yusha the Astronaut Cat" class="astro-cat" />
     <div class="cat-bubble">
-      Hi! I’m Yusha 🐾<br>
-      Let me help you explore!
+      Built with love and curiosity 🐾
     </div>
   </div>
 
   <footer>
-    <p>&copy; 2025 Yusra Ashar. All Rights Reserved.</p>
+    <p>© 2025 Yusra Ashar. All Rights Reserved.</p>
   </footer>
-
 </body>
 </html>
