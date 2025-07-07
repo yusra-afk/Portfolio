@@ -1,16 +1,39 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Smooth Scrolling
     document.querySelectorAll('nav ul li a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault(); // Prevent default jumping behavior
-            const targetId = this.getAttribute('href').substring(1); // Get section ID
-            const targetElement = document.getElementById(targetId); // Find the section
-
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 50, // Scroll to the section with an offset for fixed headers
-                    behavior: 'smooth' // Enables smooth scrolling effect
-                });
+            const href = this.getAttribute('href');
+            if (href.startsWith('#')) {
+                e.preventDefault();
+                const targetId = href.substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 50,
+                        behavior: 'smooth'
+                    });
+                }
             }
         });
+    });
+
+    // Dark Mode Toggle
+    const toggleButton = document.getElementById("dark-mode-toggle");
+    const body = document.body;
+
+    if (localStorage.getItem("theme") === "light") {
+        body.classList.add("light-mode");
+        toggleButton.textContent = "🌞 Toggle Dark Mode";
+    }
+
+    toggleButton.addEventListener("click", function () {
+        body.classList.toggle("light-mode");
+        if (body.classList.contains("light-mode")) {
+            toggleButton.textContent = "🌞 Toggle Dark Mode";
+            localStorage.setItem("theme", "light");
+        } else {
+            toggleButton.textContent = "🌙 Toggle Light Mode";
+            localStorage.setItem("theme", "dark");
+        }
     });
 });

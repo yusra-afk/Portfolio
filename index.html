@@ -1,46 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"> <!-- Sets character encoding -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets viewport for responsiveness -->
-        <title>Yusra Ashar</title> <!-- Sets title of the page -->
-        <link rel="stylesheet" href="css/styles.css"><!-- Links to external stylesheet -->
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <header>
-            <h1>Yusra Ashar</h1> <!-- My name as a Headline-->
-            <p>Aspiring Software Engineer | CSUMB Otter!</p> <!-- my tagline-->
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li> <!-- Links to about page -->
-                    <li><a href="#projects">Projects</a></li> <!-- Links to projects page -->
-                    <li><a href="#contact">Contact</a></li> <!-- Links to contact page -->
-                </ul>
-            </nav>
-            <section id="about">
-                <h2>All About Me</h2>
-                <p>I'm a Computer Science student, currently studying at California State University Monteray Bay. I'm passionate about web development and problem-solving.</p>
-            </section>
-            <section id="Projects">
-                <h2>Projects</h2>
-                <div class="project">
-                    <h3>Project Name</h3>
-                    <p>A short description of your project.</p>
-                    <p><strong>Tech used:</strong> HTML, CSS, JavaScript</p>
-                    <a href="https://github.com/yusra-afk">View on GitHub</a>
-                </div>
-            </section>
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <p>Email: <a href ="mailto:yusraashar@gmail.com">yusraashar@gmail.com</a></p>
-                <p>Phone: <a href ="tel:+13235466675">+1 (323) 546-6675</a></p>
-                <p>LinkedIn: <a href ="https://www.linkedin.com/in/yusra-ashar-/-">https://www.linkedin.com/in/yusra-ashar-/-</a></p>
-                <p>GitHub: <a href ="https://github.com/yusra-afk">https://github.com/yusra-afk</a></p>
-            </section>
-        </header>
-        <footer>
-            <p>&copy; 2025 Yusra Ashar. All Rights Reserved.</p>
-        </footer>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yusra Ashar</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Yusra Ashar</h1>
+    <p>Aspiring Software Engineer | CSUMB Otter!</p>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li class="dropdown">
+          <a href="#">Courses</a>
+          <ul class="dropdown-content">
+            <li><a href="courses/cst300.html">CST 300</a></li>
+            <li><a href="courses/cst338.html">CST 338</a></li>
+            <li><a href="courses/cst311.html">CST 311</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button id="dark-mode-toggle">🌑 Dark Mode</button>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>All About Me</h2>
+      <p>I'm a Computer Science student, currently studying at California State University Monterey Bay. I'm passionate about web development and problem-solving.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Project Name</h3>
+        <p>A short description of your project.</p>
+        <p><strong>Tech used:</strong> HTML, CSS, JavaScript</p>
+        <a href="https://github.com/yusra-afk">View on GitHub</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:yusraashar@gmail.com">yusraashar@gmail.com</a></p>
+      <p>Phone: <a href="tel:+13235466675">+1 (323) 546-6675</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/yusra-ashar-/-">https://www.linkedin.com/in/yusra-ashar-/-</a></p>
+      <p>GitHub: <a href="https://github.com/yusra-afk">https://github.com/yusra-afk</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Yusra Ashar. All Rights Reserved.</p>
+  </footer>
+
+</body>
 </html>
