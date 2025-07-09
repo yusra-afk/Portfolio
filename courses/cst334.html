@@ -5,21 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CST 334 - Operating Systems</title>
   <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    html, body { height: 100%; }
+    body { display: flex; flex-direction: column; }
+    main { flex: 1; }
+    .site-title {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #ffb6e9;
+      padding: 1rem 0 0.8rem;
+      margin: 0;
+      text-shadow: 0 0 8px #ff99cc;
+    }
+    .header-wrapper {
+      background-color: #2a1e2f;
+      border-bottom: 4px solid #ff70c9;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 4px 12px rgba(255, 112, 201, 0.3);
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 2rem;
+      color: #ffb6e9;
+      text-shadow: 0 0 10px #ff99cc;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>CST 334 - Operating Systems</h1>
+    <div class="header-wrapper">
+      <p class="site-title">Yusra's Portfolio</p>
+    </div>
   </header>
 
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../about.html">About</a>
+    <a href="../courses.html">Courses</a>
+    <a href="../index.html#education">Education</a>
+    <a href="../index.html#experience">Experience</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+
   <main>
+    <h1>CST 334 - Operating Systems</h1>
+
     <section>
       <h2>📘 Course Overview</h2>
-      <p>
-        CST 334 introduces the fundamental concepts and components of modern operating systems,
-        with an emphasis on Linux. Students explore how OSes handle processes, memory, I/O, and
-        concurrency, both from a user and a developer perspective. The course emphasizes practical
-        experience with the command line, C programming, and systems-level thinking.
-      </p>
+      <p>CST 334 introduces the fundamental concepts and components of modern operating systems...</p>
     </section>
 
     <section>
@@ -35,12 +71,7 @@
 
     <section>
       <h2>🚀 Final Project</h2>
-      <p>
-        Our group project addressed the challenge of <strong>performance debugging</strong>—identifying and resolving performance issues that don’t manifest as crashes but result in slowdowns or resource leaks. We explored <em>Relational Debugging</em> using a tool called <strong>Perspect</strong>, which compares "good" and "bad" runs to identify performance bottlenecks.
-      </p>
-      <p>
-        In our video presentation, we walk through the tool's features, results from testing on real-world bugs (from MongoDB, Redis, and GoLang), and show how Perspect can help developers debug 10x faster than traditional methods.
-      </p>
+      <p>Our group project addressed the challenge of <strong>performance debugging</strong> using the tool <strong>Perspect</strong>...</p>
       <p><strong>Project Summary Document:</strong></p>
       <embed src="../assets/Summary Document - Group Project.pdf" width="100%" height="600px" type="application/pdf" />
       <p><a href="../assets/Summary Document - Group Project.pdf" target="_blank">Download PDF</a></p>
@@ -58,7 +89,7 @@
     <p><a href="../index.html">← Back to Home</a></p>
   </main>
 
-  <footer>
+  <footer style="margin-top: auto; padding: 2rem 1rem; border-top: 1px solid #3a3a4d; background-color: #2a1e2f; text-align: center;">
     <p>&copy; 2025 Yusra Ashar. All Rights Reserved.</p>
   </footer>
 </body>

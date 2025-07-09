@@ -5,21 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CST 311 - Intro to Computer Networks</title>
   <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    html, body { height: 100%; }
+    body { display: flex; flex-direction: column; }
+    main { flex: 1; }
+    .site-title {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #ffb6e9;
+      padding: 1rem 0 0.8rem;
+      margin: 0;
+      text-shadow: 0 0 8px #ff99cc;
+    }
+    .header-wrapper {
+      background-color: #2a1e2f;
+      border-bottom: 4px solid #ff70c9;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 4px 12px rgba(255, 112, 201, 0.3);
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 2rem;
+      color: #ffb6e9;
+      text-shadow: 0 0 10px #ff99cc;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>CST 311 - Intro to Computer Networks</h1>
+    <div class="header-wrapper">
+      <p class="site-title">Yusra's Portfolio</p>
+    </div>
   </header>
 
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../about.html">About</a>
+    <a href="../courses.html">Courses</a>
+    <a href="../index.html#education">Education</a>
+    <a href="../index.html#experience">Experience</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+
   <main>
+    <h1>CST 311 - Intro to Computer Networks</h1>
+
     <section>
       <h2>📘 Course Overview</h2>
-      <p>
-        CST 311 introduces data communication technologies and computer networks. Topics include
-        Local and Wide Area Networks, TCP/IP protocols, routing, switching, socket programming, and
-        emerging areas like wireless and multimedia networking. The course includes hands-on experience
-        using tools like Wireshark, Python sockets, and network simulation with Mininet.
-      </p>
+      <p>CST 311 introduces data communication technologies and computer networks...</p>
     </section>
 
     <section>
@@ -28,29 +64,23 @@
         <li>Explain layered architectures and the TCP/IP protocol suite.</li>
         <li>Understand the functionality of essential networking applications and services.</li>
         <li>Implement socket-based communication in Python.</li>
-        <li>Use simulatifon tools to configure and analyze network performance.</li>
+        <li>Use simulation tools to configure and analyze network performance.</li>
         <li>Discuss wireless/mobile networking, multimedia transmission, and security basics.</li>
       </ul>
     </section>
 
     <section>
       <h2>🚀 Final Project: Subnetting & Group Chat over Mininet</h2>
-      <p>
-        The final coursework involved configuring a virtual network using Mininet with subnet addressing,
-        static routing, and communication between routers and hosts. A Python-based group chat application
-        was also integrated into the simulation, demonstrating concurrent communication across the network.
-        The assignment focused on practical application of IP networking, routing logic, and socket programming.
-      </p>
-
+      <p>The final coursework involved configuring a virtual network using Mininet...</p>
       <p><strong>Project PDF:</strong></p>
-      <embed src="/Users/yusraashar/Documents/portfolio/assets/pa4.pdf" width="100%" height="600px" type="application/pdf" />
-      <p><a href="/Users/yusraashar/Documents/portfolio/assets/pa4.pdf" target="_blank">Download PDF</a></p>
+      <embed src="../assets/pa4.pdf" width="100%" height="600px" type="application/pdf" />
+      <p><a href="../assets/pa4.pdf" target="_blank">Download PDF</a></p>
     </section>
 
     <p><a href="../index.html">← Back to Home</a></p>
   </main>
 
-  <footer>
+  <footer style="margin-top: auto; padding: 2rem 1rem; border-top: 1px solid #3a3a4d; background-color: #2a1e2f; text-align: center;">
     <p>&copy; 2025 Yusra Ashar. All Rights Reserved.</p>
   </footer>
 </body>

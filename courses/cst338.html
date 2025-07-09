@@ -5,24 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CST 338 - Software Design</title>
   <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    html, body { height: 100%; }
+    body { display: flex; flex-direction: column; }
+    main { flex: 1; }
+    .site-title {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #ffb6e9;
+      padding: 1rem 0 0.8rem;
+      margin: 0;
+      text-shadow: 0 0 8px #ff99cc;
+    }
+    .header-wrapper {
+      background-color: #2a1e2f;
+      border-bottom: 4px solid #ff70c9;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 4px 12px rgba(255, 112, 201, 0.3);
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 2rem;
+      color: #ffb6e9;
+      text-shadow: 0 0 10px #ff99cc;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>CST 338 - Software Design</h1>
+    <div class="header-wrapper">
+      <p class="site-title">Yusra's Portfolio</p>
+    </div>
   </header>
 
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../about.html">About</a>
+    <a href="../courses.html">Courses</a>
+    <a href="../index.html#education">Education</a>
+    <a href="../index.html#experience">Experience</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+
   <main>
+    <h1>CST 338 - Software Design</h1>
+
     <section>
       <h2>📘 Course Overview</h2>
-      <p>
-        This is an intermediate-level programming course covering techniques for developing large-scale software systems using object-oriented programming. Coverage includes software development life cycle models, requirements analysis, and graphical user interface development.
-      </p>
+      <p>This is an intermediate-level programming course covering techniques for developing large-scale software systems using object-oriented programming...</p>
     </section>
 
     <section>
       <h2>🚀 Final Project: Ghetto Yelp</h2>
-      <p><strong>Project Description:</strong> Ghetto Yelp is a mobile application that allows users to view and create reviews for restaurants. Admins can manage the list of restaurants, while users can search, review, and browse entries. The project was built using Java with Room database integration, adhering to Android development best practices.</p>
-      <p><strong>My Role:</strong> I developed the View All Restaurant and Add/Remove Restaurant activities (UI + back-end), created the Restaurant entity, managed GitHub issues and project deadlines, and presented features in the project video.</p>
+      <p><strong>Project Description:</strong> Ghetto Yelp is a mobile app where users review restaurants...</p>
+      <p><strong>My Role:</strong> I developed major components, managed issues, and presented features.</p>
       <p><strong>GitHub Repository:</strong> <a href="https://github.com/JSmevog1/GhettoYelp" target="_blank">github.com/JSmevog1/GhettoYelp</a></p>
     </section>
 
@@ -41,7 +80,7 @@
     <p><a href="../index.html">← Back to Home</a></p>
   </main>
 
-  <footer>
+  <footer style="margin-top: auto; padding: 2rem 1rem; border-top: 1px solid #3a3a4d; background-color: #2a1e2f; text-align: center;">
     <p>&copy; 2025 Yusra Ashar. All Rights Reserved.</p>
   </footer>
 </body>

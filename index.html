@@ -6,49 +6,73 @@
   <title>Yusra Ashar</title>
   <link rel="stylesheet" href="css/styles.css">
   <script src="script.js" defer></script>
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+    }
+    .site-title {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #ffb6e9;
+      padding: 1rem 0 0.8rem;
+      margin: 0;
+      text-shadow: 0 0 8px #ff99cc;
+    }
+    .header-wrapper {
+      background-color: #2a1e2f;
+      border-bottom: 4px solid #ff70c9;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 4px 12px rgba(255, 112, 201, 0.3);
+    }
+    .page-subtitle {
+      font-size: 1rem;
+      color: #ffc9f0;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+  </style>
 </head>
 <body>
 
   <header>
-    <h1>Yusra Ashar</h1>
-    <p>Aspiring Software Engineer | CSUMB Otter!</p>
-
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li class="dropdown">
-          <a href="#">Courses</a>
-          <ul class="dropdown-content">
-            <li><a href="courses/cst300.html">CST 300 - Major ProSeminar</a></li>
-            <li><a href="courses/cst338.html">CST 338 - Software Design</a></li>
-            <li><a href="courses/cst334.html">CST 334 - Operating Systems</a></li>
-            <li><a href="courses/cst363.html">CST 363 - Databases</a></li>
-            <li><a href="courses/cst311.html">CST 311 - Computer Networks</a></li>
-            <li><a href="courses/cst336.html">CST 336 - Internet Programming</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-
-    <button id="dark-mode-toggle">🌑 Dark Mode</button>
+    <div class="header-wrapper">
+      <p class="site-title">Yusra's Portfolio</p>
+    </div>
   </header>
 
+  <nav>
+    <a href="#about">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <main>
-    <section id="about">
-      <h2>All About Me</h2>
-      <p>
+    <section id="about" style="max-width: 800px; margin: 3rem auto; padding: 2rem;">
+      <h2 style="color: #ffb6e9; font-size: 2rem; margin-bottom: 0.5rem; text-align: center;">All About Me</h2>
+      <p style="color: #eec9f3; text-align: center;">
         I'm a Computer Science student at California State University Monterey Bay,
         passionate about web development and problem-solving. I created this site to share my academic journey,
         coursework, and growth as a developer.
       </p>
     </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:yusraashar@gmail.com">yusraashar@gmail.com</a></p>
-      <p>Phone: <a href="tel:+13235466675">+1 (323) 546-6675</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/yusra-ashar-/-">linkedin.com/in/yusra-ashar</a></p>
-      <p>GitHub: <a href="https://github.com/yusra-afk">github.com/yusra-afk</a></p>
+    <section id="contact" style="max-width: 800px; margin: 3rem auto; padding: 2rem;">
+      <h2 style="color: #ffb6e9; font-size: 2rem; margin-bottom: 1rem; text-align: center;">Contact Me</h2>
+      <p style="text-align: center;">Email: <a href="mailto:yusraashar@gmail.com">yusraashar@gmail.com</a></p>
+      <p style="text-align: center;">Phone: <a href="tel:+13235466675">+1 (323) 546-6675</a></p>
+      <p style="text-align: center;">LinkedIn: <a href="https://www.linkedin.com/in/yusra-ashar-/">linkedin.com/in/yusra-ashar</a></p>
+      <p style="text-align: center;">GitHub: <a href="https://github.com/yusra-afk">github.com/yusra-afk</a></p>
     </section>
   </main>
 
@@ -60,7 +84,7 @@
     </div>
   </div>
 
-  <footer>
+  <footer style="margin-top: auto; padding: 2rem 1rem; border-top: 1px solid #3a3a4d; background-color: #2a1e2f; text-align: center;">
     <p>&copy; 2025 Yusra Ashar. All Rights Reserved.</p>
   </footer>
 

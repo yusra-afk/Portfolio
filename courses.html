@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My CSUMB Courses</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+    }
+
+    .site-title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffb6e9;
+  padding: 1rem 0 0.8rem;
+  margin: 0;
+  text-shadow: 0 0 8px #ff99cc;
+}
+    header {
+      padding: 1rem 2rem 0.5rem;
+      background-color: #2a1e2f;
+    }
+    .page-title {
+      font-size: 2rem;
+      color: #ffb6e9;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+      text-shadow: 0 0 10px #ff99cc;
+    }
+    .page-subtitle {
+      font-size: 1rem;
+      color: #ffc9f0;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-wrapper">
+        <p class="site-title">Yusra's Portfolio</p>
+      </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="index.html#education">Education</a>
+    <a href="index.html#experience">Experience</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+
+  <main>
+    <h1 class="page-title">My Courses at CSUMB</h1>
+    <p class="page-subtitle">Explore each course to see my work ✨</p>
+
+    <section class="grid">
+      <div class="course-box">
+        <img src="images/cst300-preview.png" alt="CST 300 Preview">
+        <h2>CST 300 - Major ProSeminar</h2>
+        <p>Professional communication, ethics, and a final reflective portfolio.</p>
+        <a href="courses/cst300.html">View Course</a>
+      </div>
+
+      <div class="course-box">
+        <img src="images/cst338-preview.png" alt="CST 338 Preview">
+        <h2>CST 338 - Software Design</h2>
+        <p>Object-oriented Java development. Final project: Ghetto Yelp App (GUI).</p>
+        <a href="courses/cst338.html">View Course</a>
+      </div>
+
+      <div class="course-box">
+        <img src="images/cst334-preview.png" alt="CST 334 Preview">
+        <h2>CST 334 - Operating Systems</h2>
+        <p>Memory management and concurrency. Final project: custom allocator.</p>
+        <a href="courses/cst334.html">View Course</a>
+      </div>
+
+      <div class="course-box">
+        <img src="images/cst363-preview.png" alt="CST 363 Preview">
+        <h2>CST 363 - Database Systems</h2>
+        <p>ERDs, SQL queries, normal forms. Designed and documented a full schema.</p>
+        <a href="courses/cst363.html">View Course</a>
+      </div>
+
+      <div class="course-box">
+        <img src="images/cst311-preview.png" alt="CST 311 Preview">
+        <h2>CST 311 - Computer Networks</h2>
+        <p>TCP/IP, routing, and socket programming in Python for chat app.</p>
+        <a href="courses/cst311.html">View Course</a>
+      </div>
+
+      <div class="course-box">
+        <img src="images/cst336-preview.png" alt="CST 336 Preview">
+        <h2>CST 336 - Internet Programming</h2>
+        <p>Frontend + backend dev with HTML/CSS, JavaScript, PHP. Built quiz app.</p>
+        <a href="courses/cst336.html">View Course</a>
+      </div>
+    </section>
+  </main>
+
+  <footer style="margin-top: auto; padding: 2rem 1rem; border-top: 1px solid #3a3a4d; background-color: #2a1e2f; text-align: center;">
+    <p>&copy; 2025 Yusra Ashar. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
