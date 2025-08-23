@@ -3,70 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CST 366 - In Progress</title>
-  <link rel="stylesheet" href="../css/styles.css" />
-  <style>
-    html, body { height: 100%; }
-    body { display: flex; flex-direction: column; }
-    main { flex: 1; }
-    .site-title {
-      text-align: center;
-      font-size: 1.6rem;
-      font-weight: 600;
-      color: #ffb6e9;
-      padding: 1rem 0 0.8rem;
-      margin: 0;
-      text-shadow: 0 0 8px #ff99cc;
-    }
-    .header-wrapper {
-      background-color: #2a1e2f;
-      border-bottom: 4px solid #ff70c9;
-      border-bottom-left-radius: 40px;
-      border-bottom-right-radius: 40px;
-      box-shadow: 0 4px 12px rgba(255, 112, 201, 0.3);
-    }
-    h1 {
-      text-align: center;
-      font-size: 2rem;
-      margin-top: 2rem;
-      color: #ffb6e9;
-      text-shadow: 0 0 10px #ff99cc;
-    }
-  </style>
+  <title>CST 336 – Internet Programming</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="header-wrapper">
-      <p class="site-title">Yusra's Portfolio</p>
-    </div>
-  </header>
-
-  <nav>
-    <a href="../index.html">Home</a>
-    <a href="../about.html">About</a>
-    <a href="../courses.html">Courses</a>
-    <a href="../education.html">Education</a>
-    <a href="../experience.html">Experience</a>
-    <a href="../contact.html">Contact</a>
-  </nav>
+  <div id="header-placeholder"></div>
 
   <main>
-    <h1>CST 366 - In Progress</h1>
+    <h1>CST 336 – Internet Programming</h1>
+    <p class="lead">
+      Hands‑on course focused on building interactive, responsive web apps. Below are my highlights
+      from assignments and the midterm, plus the core skills I practiced throughout the class.
+    </p>
 
-    <section>
-      <h2>🚧 Stay Tuned!</h2>
-      <p>
-        CST 366 is currently in progress and it's already shaping up to be an exciting and enriching class.
-        I'm learning new tools, exploring impactful topics, and can’t wait to showcase my work here soon.
-      </p>
-      <p>Check back later to see updates and final projects from this course! 🌟</p>
+    <section class="section" aria-labelledby="work-heading">
+      <h2 id="work-heading">Key Work</h2>
+      <div class="cards">
+        <!-- Card 1: HW – US Geography Quiz -->
+        <article class="card" aria-labelledby="quiz-title">
+          <div class="meta">HW • Front‑end • Accessibility</div>
+          <h3 id="quiz-title">US Geography Quiz</h3>
+          <p>
+            A multi‑input quiz implementing validation, scoring, localStorage for attempt history,
+            and mobile‑first layout. Focus on semantic HTML and ARIA for screen‑reader support.
+          </p>
+          <div class="badge-row">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Web Storage</span>
+            <span class="badge">A11y</span>
+          </div>
+          <a href="#" target="_blank" rel="noopener">Live Demo</a>
+          <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
+        </article>
+
+        <!-- Card 2: Midterm – Otter Airlines -->
+        <article class="card" aria-labelledby="otter-title">
+          <div class="meta">Midterm • APIs • State</div>
+          <h3 id="otter-title">Otter Airlines – Flight Destinations</h3>
+          <p>
+            Single‑page app that surfaces random destinations, filters cities by country,
+            and checks flight status via API calls. Emphasis on modular JS and clean UI.
+          </p>
+          <div class="badge-row">
+            <span class="badge">Fetch API</span>
+            <span class="badge">JSON</span>
+            <span class="badge">DOM</span>
+            <span class="badge">Responsive UI</span>
+          </div>
+          <a href="#" target="_blank" rel="noopener">Live Demo</a>
+          <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
+        </article>
+
+        <!-- Card 3: Final / Showcase -->
+        <article class="card" aria-labelledby="final-title">
+          <div class="meta">Showcase • Front‑end</div>
+          <h3 id="final-title">Final Project</h3>
+          <p>
+            A polished web app tying together layout, components, and external data.
+            Deployed with CI‑friendly hosting. Walkthrough video embedded below.
+          </p>
+          <div class="badge-row">
+            <span class="badge">SPA</span>
+            <span class="badge">Routing</span>
+            <span class="badge">Deployment</span>
+          </div>
+          <a href="#" target="_blank" rel="noopener">Live Demo</a>
+          <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
+          <video controls>
+            <source src="../assets/CST 336 - Final Project Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="muted" style="margin-top:.4rem;">
+            <a href="../media/CST%20336%20-%20Final%20Project%20Video.mp4" download class="link-pill">Download video</a>
+          </p>
+        </article>
+      </div>
     </section>
 
-    <p><a href="../courses.html">← Back to Courses</a></p>
+    <section class="section" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills & Tools</h2>
+      <div class="skill-grid">
+        <div class="skill"><span>Semantic HTML & Responsive CSS</span><span class="pill">Flex • Grid</span></div>
+        <div class="skill"><span>JavaScript Fundamentals</span><span class="pill">ES6 • Modules</span></div>
+        <div class="skill"><span>DOM & Events</span><span class="pill">Accessibility‑first</span></div>
+        <div class="skill"><span>APIs & Data</span><span class="pill">fetch • JSON</span></div>
+        <div class="skill"><span>Tooling</span><span class="pill">Git • GitHub • VS Code</span></div>
+        <div class="skill"><span>Deployment</span><span class="pill">Netlify / Vercel</span></div>
+      </div>
+      <p class="section muted" style="text-align:center; margin-top:.6rem;">
+        * I’ll keep expanding this page with deep dives, code snippets, and retros as I iterate.
+      </p>
+    </section>
+
+    <section class="linkhub" aria-labelledby="links-heading">
+      <h2 id="links-heading" style="text-align:center; color:var(--accent-soft);">My Websites</h2>
+      <div class="link-row">
+        <!-- Replace # with your real URLs -->
+        <a class="link-pill" href="#" target="_blank" rel="noopener">Main Portfolio</a>
+        <a class="link-pill" href="#" target="_blank" rel="noopener">CST 336 Project Hub</a>
+        <a class="link-pill" href="#" target="_blank" rel="noopener">GitHub Profile</a>
+        <a class="link-pill" href="#" target="_blank" rel="noopener">Resume (PDF)</a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="reflection-heading">
+      <h2 id="reflection-heading">What I’m Proud Of</h2>
+      <ol class="muted" style="max-width:800px;margin:0 auto 1rem; line-height:1.8;">
+        <li><strong>Clean, readable code</strong> – with comments explaining tricky bits (e.g., debounced input handlers).</li>
+        <li><strong>Accessibility</strong> – labeled form controls, keyboard‑friendly interactions, and ARIA attributes.</li>
+        <li><strong>Version control discipline</strong> – consistent commit history documenting wireframe → prototype → polish.</li>
+      </ol>
+    </section>
+
+    <a class="back-link" href="../courses.html">← Back to Courses</a>
   </main>
 
-  <footer style="margin-top: auto; padding: 2rem 1rem; border-top: 1px solid #3a3a4d; background-color: #2a1e2f; text-align: center;">
-    <p>&copy; 2025 Yusra Ashar. All Rights Reserved.</p>
-  </footer>
+  <div id="footer-placeholder"></div>
+  <script src="js/include.js"></script>
 </body>
 </html>
