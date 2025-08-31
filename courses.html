@@ -4,7 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My CSUMB Courses</title>
-  <link rel="stylesheet" href="/css/styles.css" />
+  <script>
+    !function(){try{
+      var t=localStorage.getItem("theme");
+      var d=window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if(t==="dark"||(!t&&d)) document.documentElement.classList.add("dark");
+    }catch(e){}}();
+  </script>
+  <link rel="stylesheet" href="/css/styles.css?v=5">
   <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -14,7 +21,8 @@
     <h1 class="page-title">My Courses at CSUMB</h1>
     <p class="page-subtitle">Explore each course to see my work ✨</p>
 
-    <section class="grid">
+    <section>
+      <div class="grid">
       <div class="course-box">
         <img src="images/cst300-preview.png" alt="CST 300 Preview">
         <h2>CST 300 - Major ProSeminar</h2>
@@ -55,6 +63,7 @@
         <h2>CST 336 - Internet Programming</h2>
         <p>Frontend + backend dev with HTML/CSS, JavaScript, PHP. Built quiz app.</p>
         <a href="courses/cst336.html">View Course</a>
+      </div>
       </div>
     </section>
   </main>

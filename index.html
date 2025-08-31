@@ -4,7 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yusra Ashar — Portfolio</title>
-  <link rel="stylesheet" href="/css/styles.css" />
+  <script>
+    !function(){try{
+      var t=localStorage.getItem("theme");
+      var d=window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if(t==="dark"||(!t&&d)) document.documentElement.classList.add("dark");
+    }catch(e){}}();
+    </script>
+  <link rel="stylesheet" href="/css/styles.css?v=3">
   <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -14,8 +21,9 @@
   <main>
     <!-- Hero -->
     <section>
-      <h1>Building reliable web apps & systems — one project at a time.</h1>
-      <p class="muted" style="text-align:center; max-width:720px; margin:.75rem auto 0;">
+      <h1>Building reliable web apps & systems. 
+        One project at a time.</h1>
+      <p class="muted intro-text">
         CS student at CSUMB focusing on full‑stack (React/Node/MySQL), databases, operating systems, and networking.
       </p>
       <div class="center" style="margin-top:1.2rem; gap:1rem;">
@@ -26,7 +34,7 @@
 
     <!-- Quick highlights -->
     <section>
-      <h2 style="text-align:center;">Highlights</h2>
+      <h2 class="highlights-heading">Highlights</h2>
       <div class="grid" style="margin-top:.5rem;">
         <article class="course-box">
           <img src="/images/cst336-preview.png" alt="Internet Programming">

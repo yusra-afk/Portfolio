@@ -4,44 +4,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Education – Yusra Ashar</title>
-  <link rel="stylesheet" href="/css/styles.css" />
+  <script>
+    !function(){try{
+      var t=localStorage.getItem("theme");
+      var d=window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if(t==="dark"||(!t&&d)) document.documentElement.classList.add("dark");
+    }catch(e){}}();
+  </script>
+  <link rel="stylesheet" href="/css/styles.css?v=5">
   <script src="js/script.js" defer></script>
 </head>
 <body>
   <div id="header-placeholder"></div>
 
   <main>
-    <h1 class="page-title">My Educational Journey</h1>
-    <p class="page-subtitle">The institutions and paths that shaped my knowledge 🌱</p>
+    <header class="page-header">
+      <h1 class="page-title">My Educational Journey</h1>
+      <p class="page-subtitle">The institutions and paths that shaped my knowledge 🌱</p>
+    </header>
 
-    <section>
-      <h2>🎓 California State University, Monterey Bay</h2>
-      <p><strong>Bachelor of Science in Computer Science & Engineering</strong><br>2024 – 2026 (In Progress)</p>
-      <p>
-        Focused on software design, operating systems, databases, and full-stack development. I’ve built scalable applications, collaborated in teams using GitHub, and gained strong technical and communication skills.
-      </p>
-    </section>
+    <section class="edu-timeline">
+      <article class="edu-card">
+        <h2>🎓 California State University, Monterey Bay</h2>
+        <p class="edu-meta"><strong>Bachelor of Science in Computer Science &amp; Engineering</strong> • <span>2024 – 2026 (In Progress)</span></p>
+        <p>Focused on software design, operating systems, databases, and full‑stack development. I’ve built scalable applications, collaborated in teams using GitHub, and gained strong technical and communication skills.</p>
+      </article>
 
-    <section>
-      <h2>📘 Los Angeles Harbor College (LAHC)</h2>
-      <p><strong>Associate Degrees:</strong></p>
-      <ul>
-        <li>AS in Physics (2022 – 2026)</li>
-        <li>AS-T in Mathematics (2022 – 2023)</li>
-        <li>AA in Liberal Arts: Arts & Humanities (2022 – 2024)</li>
-        <li>AAS in Math & Natural Sciences (2021 – 2023)</li>
-      </ul>
-      <p>
-        Gained hands-on experience in Calculus, Discrete Math, Physics, Logic, Scientific Writing, and Computer Programming with C++ and Java. Courses emphasized modeling, reasoning, and real-world application.
-      </p>
-    </section>
+      <article class="edu-card">
+        <h2>📘 Los Angeles Harbor College (LAHC)</h2>
+        <p class="edu-meta"><strong>Associate Degrees</strong> • <span>Graduated 2024</span></p>
+        <ul class="edu-list">
+          <li>AS‑T in Mathematics (2022 – 2023)</li>
+          <li>AA in Liberal Arts: Arts &amp; Humanities (2022 – 2024)</li>
+          <li>AAS in Math &amp; Natural Sciences (2021 – 2023)</li>
+        </ul>
+        <p>Gained hands‑on experience in Calculus, Discrete Math, Physics, Logic, Scientific Writing, and Computer Programming with C++ and Java. Courses emphasized modeling, reasoning, and real‑world application.</p>
+      </article>
 
-    <section>
-      <h2>🏫 Blue Ridge Academy</h2>
-      <p><strong>High School Diploma</strong><br>Graduated in 2022</p>
-      <p>
-        Developed foundational academic skills and curiosity that led me to pursue a career in STEM and technology.
-      </p>
+      <article class="edu-card">
+        <h2>🏫 Blue Ridge Academy</h2>
+        <p class="edu-meta"><strong>High School Diploma</strong> • <span>Graduated 2022</span></p>
+        <p>Developed foundational academic skills and curiosity that led me to pursue a career in STEM and technology.</p>
+      </article>
     </section>
   </main>
 

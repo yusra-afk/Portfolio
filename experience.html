@@ -4,50 +4,67 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Experience – Yusra Ashar</title>
-  <link rel="stylesheet" href="/css/styles.css" />
+  <script>
+    !function(){try{
+      var t=localStorage.getItem("theme");
+      var d=window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if(t==="dark"||(!t&&d)) document.documentElement.classList.add("dark");
+    }catch(e){}}();
+  </script>
+  <!-- Use a RELATIVE path so it works from subfolders too -->
+  <link rel="stylesheet" href="css/styles.css?v=7">
   <script src="js/script.js" defer></script>
 </head>
 <body>
+  <!-- Header include -->
   <div id="header-placeholder"></div>
 
-  <main>
-    <h1 class="page-title">Experience & Projects</h1>
-    <p class="page-subtitle">How I’ve applied my skills in real-world and academic settings 🛠️</p>
+  <main class="xp">
+    <header class="page-header">
+      <h1 class="page-title">Experience &amp; Projects</h1>
+      <p class="page-subtitle">A snapshot of completed work across web, software, and data.</p>
+    </header>
+
+    <!-- All items below are finished; phrased in past tense -->
+    <section>
+      <h2>🌐 Web Development — Internet Programming (CST 336)</h2>
+      <p><strong>California State University, Monterey Bay</strong> • <em>Completed</em></p>
+      <ul>
+        <li>Built a multi-page responsive site with accessible UI, componentized CSS, and clean semantic HTML.</li>
+        <li>Implemented interactive views and validated forms with modern, event-driven JavaScript.</li>
+        <li>Shipped a polished final app and documented deployment, including environment and build steps.</li>
+      </ul>
+      <p><a class="btn btn-ghost" href="courses/cst336.html">See the course work →</a></p>
+    </section>
 
     <section>
-      <h2>🌐 Web Development – Internet Programming</h2>
-      <p><strong>California State University, Monterey Bay</strong><br>2024 – Present</p>
+      <h2>💻 Software Development (Academic)</h2>
+      <p><strong>California State University, Monterey Bay</strong> • <em>Completed</em></p>
       <ul>
-        <li>Designed multi-page responsive websites using HTML, CSS, and JavaScript</li>
-        <li>Built interactive elements and forms using event-driven JS</li>
-        <li>Focused on semantic HTML and accessibility-first layout</li>
-        <li>Used GitHub for version control and collaboration</li>
+        <li>Developed modular programs in Java and C++ with unit-tested data structures (queues, stacks, trees).</li>
+        <li>Produced GUI utilities in IDEs such as Xcode, Visual Studio, and Eclipse.</li>
+        <li>Used Git/GitHub for version control, code reviews, and releases.</li>
       </ul>
     </section>
 
     <section>
-      <h2>💻 Software Development Projects (Academic)</h2>
-      <p><strong>California State University, Monterey Bay</strong><br>2024 – Present</p>
+      <h2>🧠 Data Engineering — Database Systems (CST 363)</h2>
+      <p><strong>California State University, Monterey Bay</strong> • <em>Completed Jun 2025</em></p>
       <ul>
-        <li>Built modular applications using Java, C++, and Visual Basic</li>
-        <li>Applied recursion and advanced data structures (queues, stacks, trees)</li>
-        <li>Developed GUI-based apps using Xcode, Visual Studio, and Eclipse</li>
-        <li>Used Agile practices to meet deadlines and collaborate with teammates</li>
+        <li>Designed normalized schemas and wrote SQL for constraints, joins, and indexes.</li>
+        <li>Created ERDs and a small C++ back-end for reporting over relational data.</li>
+        <li>Optimized queries and documented performance considerations and trade-offs.</li>
       </ul>
+      <p><a class="btn btn-ghost" href="courses/cst363.html">See the course work →</a></p>
     </section>
 
     <section>
-      <h2>🧠 Data Engineer (Course Project) – Database Systems</h2>
-      <p><strong>California State University, Monterey Bay</strong><br>Feb 2025 – Jun 2025</p>
-      <ul>
-        <li>Designed normalized relational databases using SQL</li>
-        <li>Created ER diagrams, constraints, joins, and indexes</li>
-        <li>Built a C++ back-end for database operations and reporting</li>
-        <li>Explored best practices in relational data modeling and performance</li>
-      </ul>
+      <h2>📌 Current Status</h2>
+      <p>All course projects are wrapped up. While I’m not actively building a new course project right now, I do have a <strong>secret project underway</strong> 👀. I’m also open to feedback on my portfolio and future collaboration ideas.</p>
     </section>
   </main>
 
+  <!-- Footer include -->
   <div id="footer-placeholder"></div>
   <script src="js/include.js"></script>
 </body>

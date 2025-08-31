@@ -3,17 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CST 336 – Internet Programming</title>
-  <link rel="stylesheet" href="/css/styles.css" />
-  <script src="js/script.js" defer></script>
+  <title>CST 336 - Internet Programming</title>
+
+  <!-- Theme boot -->
+  <script>
+    try {
+      const t = localStorage.getItem("theme");
+      const d = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (t === "dark" || (!t && d)) document.documentElement.classList.add("dark");
+    } catch(_) {}
+  </script>
+
+  <!-- ✅ Stylesheet -->
+  <link rel="stylesheet" href="../css/styles.css?v=4" />
+
+  <!-- ✅ Script -->
+  <script src="../js/script.js" defer></script>
 </head>
-<body>
+<body class="page-cst336">
   <div id="header-placeholder"></div>
 
   <main>
     <h1>CST 336 – Internet Programming</h1>
     <p class="lead">
-      Hands‑on course focused on building interactive, responsive web apps. Below are my highlights
+      Hands-on course focused on building interactive, responsive web apps. Below are my highlights
       from assignments and the midterm, plus the core skills I practiced throughout the class.
     </p>
 
@@ -22,11 +35,11 @@
       <div class="cards">
         <!-- Card 1: HW – US Geography Quiz -->
         <article class="card" aria-labelledby="quiz-title">
-          <div class="meta">HW • Front‑end • Accessibility</div>
+          <div class="meta">HW • Front-end • Accessibility</div>
           <h3 id="quiz-title">US Geography Quiz</h3>
           <p>
-            A multi‑input quiz implementing validation, scoring, localStorage for attempt history,
-            and mobile‑first layout. Focus on semantic HTML and ARIA for screen‑reader support.
+            A multi-input quiz implementing validation, scoring, localStorage for attempt history,
+            and mobile-first layout. Focus on semantic HTML and ARIA for screen-reader support.
           </p>
           <div class="badge-row">
             <span class="badge">HTML</span>
@@ -39,31 +52,13 @@
           <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
         </article>
 
-        <!-- Card 2: Midterm – Otter Airlines -->
-        <article class="card" aria-labelledby="otter-title">
-          <div class="meta">Midterm • APIs • State</div>
-          <h3 id="otter-title">Otter Airlines – Flight Destinations</h3>
-          <p>
-            Single‑page app that surfaces random destinations, filters cities by country,
-            and checks flight status via API calls. Emphasis on modular JS and clean UI.
-          </p>
-          <div class="badge-row">
-            <span class="badge">Fetch API</span>
-            <span class="badge">JSON</span>
-            <span class="badge">DOM</span>
-            <span class="badge">Responsive UI</span>
-          </div>
-          <a href="#" target="_blank" rel="noopener">Live Demo</a>
-          <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
-        </article>
-
-        <!-- Card 3: Final / Showcase -->
+        <!-- Card : Final / Showcase -->
         <article class="card" aria-labelledby="final-title">
-          <div class="meta">Showcase • Front‑end</div>
+          <div class="meta">Showcase • Front-end</div>
           <h3 id="final-title">Final Project</h3>
           <p>
             A polished web app tying together layout, components, and external data.
-            Deployed with CI‑friendly hosting. Walkthrough video embedded below.
+            Deployed with CI-friendly hosting. Walkthrough video embedded below.
           </p>
           <div class="badge-row">
             <span class="badge">SPA</span>
@@ -72,10 +67,15 @@
           </div>
           <a href="#" target="_blank" rel="noopener">Live Demo</a>
           <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
-          <video controls>
-            <source src="../assets/CST 336 - Final Project Video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+
+          <!-- ✅ Constrained video wrapper -->
+          <div class="media-16x9">
+            <video controls preload="metadata">
+              <source src="../assets/CST 336 - Final Project Video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
           <p class="muted" style="margin-top:.4rem;">
             <a href="../media/CST%20336%20-%20Final%20Project%20Video.mp4" download class="link-pill">Download video</a>
           </p>
@@ -88,7 +88,7 @@
       <div class="skill-grid">
         <div class="skill"><span>Semantic HTML & Responsive CSS</span><span class="pill">Flex • Grid</span></div>
         <div class="skill"><span>JavaScript Fundamentals</span><span class="pill">ES6 • Modules</span></div>
-        <div class="skill"><span>DOM & Events</span><span class="pill">Accessibility‑first</span></div>
+        <div class="skill"><span>DOM & Events</span><span class="pill">Accessibility-first</span></div>
         <div class="skill"><span>APIs & Data</span><span class="pill">fetch • JSON</span></div>
         <div class="skill"><span>Tooling</span><span class="pill">Git • GitHub • VS Code</span></div>
         <div class="skill"><span>Deployment</span><span class="pill">Netlify / Vercel</span></div>
@@ -101,7 +101,6 @@
     <section class="linkhub" aria-labelledby="links-heading">
       <h2 id="links-heading" style="text-align:center; color:var(--accent-soft);">My Websites</h2>
       <div class="link-row">
-        <!-- Replace # with your real URLs -->
         <a class="link-pill" href="#" target="_blank" rel="noopener">Main Portfolio</a>
         <a class="link-pill" href="#" target="_blank" rel="noopener">CST 336 Project Hub</a>
         <a class="link-pill" href="#" target="_blank" rel="noopener">GitHub Profile</a>
@@ -113,7 +112,7 @@
       <h2 id="reflection-heading">What I’m Proud Of</h2>
       <ol class="muted" style="max-width:800px;margin:0 auto 1rem; line-height:1.8;">
         <li><strong>Clean, readable code</strong> – with comments explaining tricky bits (e.g., debounced input handlers).</li>
-        <li><strong>Accessibility</strong> – labeled form controls, keyboard‑friendly interactions, and ARIA attributes.</li>
+        <li><strong>Accessibility</strong> – labeled form controls, keyboard-friendly interactions, and ARIA attributes.</li>
         <li><strong>Version control discipline</strong> – consistent commit history documenting wireframe → prototype → polish.</li>
       </ol>
     </section>
@@ -122,6 +121,7 @@
   </main>
 
   <div id="footer-placeholder"></div>
-  <script src="js/include.js"></script>
+
+  <script src="../js/include.js"></script>
 </body>
 </html>
