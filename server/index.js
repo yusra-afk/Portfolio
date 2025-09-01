@@ -1,3 +1,4 @@
+// server/index.js
 import express from "express";
 import cors from "cors";
 import path from "path";
@@ -8,19 +9,27 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
+
+// Middleware
 app.use(cors());
 app.use(express.json());
 
-// 1) Serve the static portfolio from the project root
-app.use(express.static(path.join(__dirname, ".."))); // .. points to the folder with index.html
+// Serve the static portfolio from repo root (one level up from /server)
+app.use(express.static(path.join(__dirname, "..")));
 
-// 2) API routes
+// API routes
 app.use("/api/chat", chat);
 
-// 3) Root route -> send index.html
+// Home -> send the root index.html
 app.get("/", (_req, res) => {
   res.sendFile(path.join(__dirname, "..", "index.html"));
 });
 
-const PORT = 5000;
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+// Optional: basic health check
+app.get("/healthz", (_req, res) => res.status(200).send("ok"));
+
+// IMPORTANT: Use Render's assigned port, fallback for local dev
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
