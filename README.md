@@ -21,11 +21,3 @@ Currently evolving from a basic HTML/CSS site into a modern **React + Tailwind**
 - **Deployment:** GitHub Pages / Render / Netlify  
 
 ---
-
-## 📸 Preview  
-*(Insert a screenshot or GIF here once you take one!)*  
-![Portfolio Preview](images/preview.png)  
-
----
-
-## 📂 File Structure  
