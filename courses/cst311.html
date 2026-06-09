@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script>
-    !function(){try{
-      var t=localStorage.getItem("theme");
-      var d=window.matchMedia("(prefers-color-scheme: dark)").matches;
-      if(t==="dark"||(!t&&d)) document.documentElement.classList.add("dark");
-    }catch(e){}}();
-    </script>
-    <link rel="stylesheet" href="/css/styles.css?v=3">
-    
 <head>
-  <link rel="icon" type="image/svg+xml" href="images/yusra.svg">
+  <link rel="icon" type="image/svg+xml" href="../images/yusra.svg">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CST 311 - Intro to Computer Networks</title>
-  <link rel="stylesheet" href="/css/styles.css?v=1">
+  <link rel="stylesheet" href="/css/styles.css">
   <script src="/js/script.js" defer></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Space+Mono&display=swap');
+    body { background: #0a0a0f; color: #f0f0f5; font-family: 'Space Grotesk', sans-serif; }
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+    h1 { color: #f0f0f5; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: 2rem; }
+    section { background: #111118; border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem; box-shadow: none; }
+    .section-label { font-family: 'Space Mono', monospace; font-size: 11px; color: #7c6dfa; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.5rem; display: block; }
+    h2 { color: #f0f0f5; font-weight: 600; margin-top: 0; }
+    p, li { color: #888896; }
+    a { color: #7c6dfa; }
+    ul { color: #888896; }
+    iframe, embed, video { border-radius: 8px; border: 1px solid rgba(255,255,255,0.07); max-width: 100%; display: block; margin-bottom: 1rem; }
+    .btn, .btn-ghost { background: #7c6dfa; color: #fff; border-radius: 8px; border: none; padding: 10px 22px; font-weight: 600; text-decoration: none; display: inline-block; box-shadow: none; }
+    strong { color: #f0f0f5; }
+  </style>
 </head>
 <body>
   <div id="header-placeholder"></div>
-  
+
   <main>
     <h1>CST 311 - Intro to Computer Networks</h1>
 
     <section>
+      <span class="section-label">Overview</span>
       <h2>📘 Course Overview</h2>
       <p>CST 311 introduces data communication technologies and computer networks...</p>
     </section>
 
     <section>
+      <span class="section-label">Outcomes</span>
       <h2>🎯 Course Outcomes</h2>
       <ul style="text-align: left; max-width: 800px; margin: 0 auto;">
         <li>Explain layered architectures and the TCP/IP protocol suite.</li>
@@ -40,6 +48,7 @@
     </section>
 
     <section>
+      <span class="section-label">Project</span>
       <h2>🚀 Final Project: Subnetting & Group Chat over Mininet</h2>
       <p>The final coursework involved configuring a virtual network using Mininet...</p>
       <p><strong>Project PDF:</strong></p>

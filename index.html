@@ -5,72 +5,97 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yusra Ashar — Portfolio</title>
-  <script>
-    !function(){try{
-      var t=localStorage.getItem("theme");
-      var d=window.matchMedia("(prefers-color-scheme: dark)").matches;
-      if(t==="dark"||(!t&&d)) document.documentElement.classList.add("dark");
-    }catch(e){}}();
-    </script>
-  <link rel="stylesheet" href="/css/styles.css?v=3">
+  <link rel="stylesheet" href="/css/styles.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
-  <!-- Header include -->
   <div id="header-placeholder"></div>
 
   <main>
     <!-- Hero -->
-    <section>
-      <h1>Building reliable web apps & systems. 
-        One project at a time.</h1>
-      <p class="muted intro-text">
+    <section class="hero">
+      <div class="hero-tag">Open to SWE internships &amp; new grad roles</div>
+      <h1>
+        Yusra Ashar.<br>
+        <span class="accent">Full-stack</span> engineer<br>
+        in progress.
+      </h1>
+      <p class="hero-sub">
         CS student at CSUMB focusing on full‑stack (React/Node/MySQL), databases, operating systems, and networking.
       </p>
-      <div class="center" style="margin-top:1.2rem; gap:1rem;">
-        <a href="/assets/yusra_ashar_resume.pdf" class="btn btn-primary">Download Résumé</a>
-        <a href="mailto:yusraashar14@gmail.com" class="btn btn-ghost">Email Me</a>
+      <div class="hero-actions">
+        <a href="/assets/yusra_ashar_resume.pdf" class="btn-primary">Download Résumé</a>
+        <a href="mailto:yusraashar14@gmail.com" class="btn-ghost">Email Me</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com/yusra-afk" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/yusra-ashar-/" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:yusraashar14@gmail.com">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          yusraashar14@gmail.com
+        </a>
       </div>
     </section>
 
-    <!-- Quick highlights -->
+    <!-- Highlights -->
     <section>
-      <h2 class="highlights-heading">Highlights</h2>
-      <div class="grid" style="margin-top:.5rem;">
-        <article class="course-box">
-          <img src="/images/cst336-preview.png" alt="Internet Programming">
-          <h2>Internet Programming</h2>
-          <p>Front‑end + APIs, built accessible UI and a polished final app.</p>
-          <a href="/courses/cst336.html">View Course →</a>
-        </article>
-
-        <article class="course-box">
-          <img src="/images/cst334-preview.png" alt="Operating Systems">
-          <h2>Operating Systems</h2>
-          <p>Concurrency, memory, and a custom allocator in C.</p>
-          <a href="/courses/cst334.html">View Course →</a>
-        </article>
-
-        <article class="course-box">
-          <img src="/images/cst363-preview.png" alt="Database Systems">
-          <h2>Database Systems</h2>
-          <p>ERDs, SQL, and full‑stack data‑driven application design.</p>
-          <a href="/courses/cst363.html">View Course →</a>
-        </article>
+      <div class="section-label">// highlights</div>
+      <div class="card-list">
+        <a href="/courses/cst336.html" class="card-list-item">
+          <span class="card-num">01</span>
+          <div class="card-body">
+            <div class="card-title">Internet Programming</div>
+            <div class="card-desc">Front-end + APIs, built accessible UI and a polished final app.</div>
+            <div class="card-tags">
+              <span class="stack-tag">HTML/CSS</span>
+              <span class="stack-tag">JavaScript</span>
+              <span class="stack-tag">PHP</span>
+            </div>
+          </div>
+          <span class="card-arrow">↗</span>
+        </a>
+        <a href="/courses/cst334.html" class="card-list-item">
+          <span class="card-num">02</span>
+          <div class="card-body">
+            <div class="card-title">Operating Systems</div>
+            <div class="card-desc">Concurrency, memory management, and a custom allocator in C.</div>
+            <div class="card-tags">
+              <span class="stack-tag">C</span>
+              <span class="stack-tag">POSIX</span>
+              <span class="stack-tag">Concurrency</span>
+            </div>
+          </div>
+          <span class="card-arrow">↗</span>
+        </a>
+        <a href="/courses/cst363.html" class="card-list-item">
+          <span class="card-num">03</span>
+          <div class="card-body">
+            <div class="card-title">Database Systems</div>
+            <div class="card-desc">ERDs, SQL, and full-stack data-driven application design.</div>
+            <div class="card-tags">
+              <span class="stack-tag">MySQL</span>
+              <span class="stack-tag">SQL</span>
+              <span class="stack-tag">C++</span>
+            </div>
+          </div>
+          <span class="card-arrow">↗</span>
+        </a>
       </div>
     </section>
   </main>
 
-  <!-- Optional cat (can delete if you want ultra‑corporate) -->
-  <div id="cat-guide" class="center" style="gap:.6rem;">
+  <div id="cat-guide" style="display:none;">
     <img src="/images/space_cat.png" alt="Yusha the Astronaut Cat" class="astro-cat" />
-    <div class="cat-bubble">Click 'Courses' to explore my CS journey 💻</div>
+    <div class="cat-bubble">Click 'Projects' to explore my CS journey 💻</div>
   </div>
 
-  <!-- Footer include -->
   <div id="footer-placeholder"></div>
-
-  <!-- HTML includes loader -->
   <script src="js/include.js"></script>
 </body>
 </html>

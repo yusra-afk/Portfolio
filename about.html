@@ -1,111 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script>
-    !function(){try{
-      var t=localStorage.getItem("theme");
-      var d=window.matchMedia("(prefers-color-scheme: dark)").matches;
-      if(t==="dark"||(!t&&d)) document.documentElement.classList.add("dark");
-    }catch(e){}}();
-    </script>
-    <link rel="stylesheet" href="/css/styles.css?v=3">
-
 <head>
   <link rel="icon" type="image/svg+xml" href="images/yusra.svg">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me – Yusra Ashar</title>
-  <link rel="stylesheet" href="/css/styles.css?v=1">
+  <link rel="stylesheet" href="/css/styles.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
   <div id="header-placeholder"></div>
 
-  <main class="about">
-    <!-- Hero -->
-    <section class="about-hero">
-      <div class="about-avatar">
-        <!-- replace with your photo -->
-        <img src="/images/yusra.svg" alt="Yusra Ashar">
-      </div>
-      <h1 class="page-title">About Me</h1>
-      <p class="page-subtitle">Get to know Yusra ✨</p>
-  
-      <div class="about-stats">
-        <span class="stat"><strong>2+</strong> yrs coding</span>
-        <span class="stat"><strong>40+</strong> cities</span>
-        <span class="stat"><strong>4</strong> disciplines</span>
-        <span class="stat"><strong>∞</strong> curiosity</span>
-      </div>
-    </section>
-  
-    <!-- Two-column intro -->
-    <section class="about-intro">
-      <div class="col">
-        <h2 class="h2">Who I Am</h2>
-        <p>
-          I’m Yusra Ashar, a CS student at CSUMB who loves building clean, intuitive,
-          and reliable digital experiences. This portfolio is my creative playground,
-          highlighting projects across web development, databases, operating systems,
-          and software design.
-        </p>
-        <div class="chip-row">
-          <span class="chip">React</span>
-          <span class="chip">Node</span>
-          <span class="chip">MySQL</span>
-          <span class="chip">C/C++</span>
-          <span class="chip">Design Systems</span>
-          <span class="chip">A11y</span>
+  <main>
+    <section>
+      <div class="section-label">// about me</div>
+
+      <!-- Hero -->
+      <div class="about-hero">
+        <div class="about-avatar">
+          <img src="/images/yusra.svg" alt="Yusra Ashar">
+        </div>
+        <h1>About Me</h1>
+        <p class="page-subtitle">Get to know Yusra</p>
+        <div class="about-stats">
+          <span class="stat"><strong>2+</strong> yrs coding</span>
+          <span class="stat"><strong>40+</strong> cities</span>
+          <span class="stat"><strong>4</strong> disciplines</span>
+          <span class="stat"><strong>∞</strong> curiosity</span>
         </div>
       </div>
-  
-      <div class="col">
-        <h2 class="h2">Highlights</h2>
-        <ul class="icon-list">
-          <li>Built a multi-page responsive app with componentized CSS and a11y</li>
-          <li>Designed normalized schemas &amp; SQL for data-driven features</li>
-          <li>Shipped projects with polished UI &amp; deployment docs</li>
-          <li>Collaborated in teams using GitHub (reviews, issues, releases)</li>
-        </ul>
+
+      <!-- Two-column intro -->
+      <div class="about-intro">
+        <div class="col">
+          <h2>// who i am</h2>
+          <p>
+            I'm Yusra Ashar, a CS student at CSUMB who loves building clean, intuitive,
+            and reliable digital experiences. This portfolio is my creative playground,
+            highlighting projects across web development, databases, operating systems,
+            and software design.
+          </p>
+          <div class="chip-row">
+            <span class="chip">React</span>
+            <span class="chip">Node</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">C/C++</span>
+            <span class="chip">Design Systems</span>
+            <span class="chip">A11y</span>
+          </div>
+        </div>
+
+        <div class="col">
+          <h2>// highlights</h2>
+          <ul class="icon-list">
+            <li>Built a multi-page responsive app with componentized CSS and a11y</li>
+            <li>Designed normalized schemas &amp; SQL for data-driven features</li>
+            <li>Shipped projects with polished UI &amp; deployment docs</li>
+            <li>Collaborated in teams using GitHub (reviews, issues, releases)</li>
+          </ul>
+        </div>
       </div>
-    </section>
-  
-    <!-- Feature cards -->
-    <section class="about-cards">
-      <article class="card">
-        <div class="accent"></div>
-        <h3>What Drives Me</h3>
-        <p>
-          I love turning complexity into clarity—whether structuring a database,
-          modeling data, or polishing an interface. My approach blends curiosity,
-          clean design principles, and a commitment to writing reliable code.
-        </p>
-      </article>
-  
-      <article class="card">
-        <div class="accent"></div>
-        <h3>Beyond Tech</h3>
-        <p>
-          Travel fuels my creativity, I’ve explored 15+ countries. Each journey
-          teaches adaptability, growth mindset, and resilience—traits I bring into engineering. I also love
-          reading, writing, and finding balance in the water while swimming.
-        </p>
-      </article>
-  
-      <article class="card">
-        <div class="accent"></div>
-        <h3>Now</h3>
-        <p>
-          Coursework projects are wrapped, and I’m experimenting with a
-          <strong>secret project</strong> 👀. Always open to feedback and collabs.
-        </p>
-      </article>
-    </section>
-  
-    <!-- Quote -->
-    <section class="about-quote">
-      <blockquote>
-        “Simplicity is the ultimate sophistication.” <span>— Leonardo da Vinci</span>
-      </blockquote>
+
+      <!-- Feature cards -->
+      <div class="about-cards">
+        <article class="card">
+          <h3>What Drives Me</h3>
+          <p>
+            I love turning complexity into clarity—whether structuring a database,
+            modeling data, or polishing an interface. My approach blends curiosity,
+            clean design principles, and a commitment to writing reliable code.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Beyond Tech</h3>
+          <p>
+            Travel fuels my creativity — I've explored 15+ countries. Each journey
+            teaches adaptability, growth mindset, and resilience — traits I bring into
+            engineering. I also love reading, writing, and swimming.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Now</h3>
+          <p>
+            Coursework projects are wrapped, and I'm experimenting with a
+            <strong style="color:var(--text)">secret project</strong> 👀.
+            Always open to feedback and collabs.
+          </p>
+        </article>
+      </div>
+
+      <!-- Quote -->
+      <div class="about-quote">
+        <blockquote>
+          "Simplicity is the ultimate sophistication." <span>— Leonardo da Vinci</span>
+        </blockquote>
+      </div>
     </section>
   </main>
 

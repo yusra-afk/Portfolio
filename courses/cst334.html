@@ -1,62 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script>
-    !function(){try{
-      var t=localStorage.getItem("theme");
-      var d=window.matchMedia("(prefers-color-scheme: dark)").matches;
-      if(t==="dark"||(!t&&d)) document.documentElement.classList.add("dark");
-    }catch(e){}}();
-    </script>
-    <link rel="stylesheet" href="/css/styles.css?v=3">
 <head>
-  <link rel="icon" type="image/svg+xml" href="images/yusra.svg">
+  <link rel="icon" type="image/svg+xml" href="../images/yusra.svg">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CST 334 - Operating Systems</title>
-  <link rel="stylesheet" href="/css/styles.css?v=1">
+  <link rel="stylesheet" href="/css/styles.css">
   <script src="/js/script.js" defer></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Space+Mono&display=swap');
+    body { background: #0a0a0f; color: #f0f0f5; font-family: 'Space Grotesk', sans-serif; }
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+    h1 { color: #f0f0f5; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: 2rem; }
+    section { background: #111118; border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem; box-shadow: none; }
+    .section-label { font-family: 'Space Mono', monospace; font-size: 11px; color: #7c6dfa; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.5rem; display: block; }
+    h2 { color: #f0f0f5; font-weight: 600; margin-top: 0; }
+    p, li { color: #888896; }
+    a { color: #7c6dfa; }
+    ul { color: #888896; }
+    iframe, embed, video { border-radius: 8px; border: 1px solid rgba(255,255,255,0.07); max-width: 100%; display: block; margin-bottom: 1rem; }
+    .btn, .btn-ghost { background: #7c6dfa; color: #fff; border-radius: 8px; border: none; padding: 10px 22px; font-weight: 600; text-decoration: none; display: inline-block; box-shadow: none; }
+    strong { color: #f0f0f5; }
+  </style>
 </head>
 <body>
   <div id="header-placeholder"></div>
 
   <main>
-  <h1>CST 334 - Operating Systems</h1>
+    <h1>CST 334 - Operating Systems</h1>
 
-  <section>
-    <h2>📘 Course Overview</h2>
-    <p>CST 334 introduces the fundamental concepts and components of modern operating systems...</p>
-  </section>
+    <section>
+      <span class="section-label">Overview</span>
+      <h2>📘 Course Overview</h2>
+      <p>CST 334 introduces the fundamental concepts and components of modern operating systems...</p>
+    </section>
 
-  <section>
-    <h2>🎯 Course Outcomes</h2>
-    <ul style="text-align: left; max-width: 800px; margin: 0 auto;">
-      <li>Explain core OS design problems and solutions.</li>
-      <li>Write C programs using Linux system calls and concurrency tools.</li>
-      <li>Use the GNU/Linux command line (BASH) effectively.</li>
-      <li>Create shell scripts and use GNU tools like awk and make.</li>
-      <li>Understand how operating systems manage memory, processes, and devices.</li>
-    </ul>
-  </section>
+    <section>
+      <span class="section-label">Outcomes</span>
+      <h2>🎯 Course Outcomes</h2>
+      <ul style="text-align: left; max-width: 800px; margin: 0 auto;">
+        <li>Explain core OS design problems and solutions.</li>
+        <li>Write C programs using Linux system calls and concurrency tools.</li>
+        <li>Use the GNU/Linux command line (BASH) effectively.</li>
+        <li>Create shell scripts and use GNU tools like awk and make.</li>
+        <li>Understand how operating systems manage memory, processes, and devices.</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>🚀 Final Project</h2>
-    <p>Our group project addressed the challenge of <strong>performance debugging</strong> using the tool <strong>Perspect</strong>...</p>
-    <p><strong>Project Summary Document:</strong></p>
-    <embed src="../assets/Summary Document - Group Project.pdf" width="100%" height="600px" type="application/pdf" />
-    <p><a href="../assets/Summary Document - Group Project.pdf" target="_blank">Download PDF</a></p>
-  </section>
+    <section>
+      <span class="section-label">Project</span>
+      <h2>🚀 Final Project</h2>
+      <p>Our group project addressed the challenge of <strong>performance debugging</strong> using the tool <strong>Perspect</strong>...</p>
+      <p><strong>Project Summary Document:</strong></p>
+      <embed src="../assets/Summary Document - Group Project.pdf" width="100%" height="600px" type="application/pdf" />
+      <p><a href="../assets/Summary Document - Group Project.pdf" target="_blank">Download PDF</a></p>
+    </section>
 
-  <section>
-    <h2>🎥 Final Presentation Video</h2>
-    <video width="100%" height="400" controls>
-      <source src="../assets/CST 334 Final Project Video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <p><a href="../assets/CST 334 Final Project Video.mp4" target="_blank">Download/Watch Fullscreen</a></p>
-  </section>
+    <section>
+      <span class="section-label">Media</span>
+      <h2>🎥 Final Presentation Video</h2>
+      <video width="100%" height="400" controls>
+        <source src="../assets/CST 334 Final Project Video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p><a href="../assets/CST 334 Final Project Video.mp4" target="_blank">Download/Watch Fullscreen</a></p>
+    </section>
 
-  <p><a href="../index.html">← Back to Home</a></p>
-</main>
+    <p><a href="../index.html">← Back to Home</a></p>
+  </main>
 
   <div id="footer-placeholder"></div>
   <script src="/js/include.js"></script>

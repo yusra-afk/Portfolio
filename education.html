@@ -5,48 +5,62 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Education – Yusra Ashar</title>
-  <script>
-    !function(){try{
-      var t=localStorage.getItem("theme");
-      var d=window.matchMedia("(prefers-color-scheme: dark)").matches;
-      if(t==="dark"||(!t&&d)) document.documentElement.classList.add("dark");
-    }catch(e){}}();
-  </script>
-  <link rel="stylesheet" href="/css/styles.css?v=5">
+  <link rel="stylesheet" href="/css/styles.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
   <div id="header-placeholder"></div>
 
   <main>
-    <header class="page-header">
-      <h1 class="page-title">My Educational Journey</h1>
-      <p class="page-subtitle">The institutions and paths that shaped my knowledge 🌱</p>
-    </header>
+    <div class="page-header">
+      <div class="section-label">// 02 — education</div>
+      <h1>My Educational Journey</h1>
+      <p class="page-subtitle">The institutions and paths that shaped my knowledge.</p>
+    </div>
 
-    <section class="edu-timeline">
-      <article class="edu-card">
-        <h2>🎓 California State University, Monterey Bay</h2>
-        <p class="edu-meta"><strong>Bachelor of Science in Computer Science &amp; Engineering</strong> • <span>2024 – 2026 (In Progress)</span></p>
-        <p>Focused on software design, operating systems, databases, and full‑stack development. I’ve built scalable applications, collaborated in teams using GitHub, and gained strong technical and communication skills.</p>
-      </article>
+    <section>
+      <div class="edu-list-wrapper">
+        <article class="edu-card">
+          <div class="edu-card-header">
+            <div class="edu-card-header-left">
+              <h2>California State University, Monterey Bay</h2>
+              <span class="edu-status in-progress">in progress</span>
+            </div>
+            <span class="edu-year">2024 – 2026</span>
+          </div>
+          <p class="edu-meta">Bachelor of Science in Computer Science &amp; Engineering</p>
+          <p class="edu-desc">Focused on software design, operating systems, databases, and full‑stack development. Built scalable applications, collaborated in teams using GitHub, and gained strong technical and communication skills.</p>
+        </article>
 
-      <article class="edu-card">
-        <h2>📘 Los Angeles Harbor College (LAHC)</h2>
-        <p class="edu-meta"><strong>Associate Degrees</strong> • <span>Graduated 2024</span></p>
-        <ul class="edu-list">
-          <li>AS‑T in Mathematics (2022 – 2023)</li>
-          <li>AA in Liberal Arts: Arts &amp; Humanities (2022 – 2024)</li>
-          <li>AAS in Math &amp; Natural Sciences (2021 – 2023)</li>
-        </ul>
-        <p>Gained hands‑on experience in Calculus, Discrete Math, Physics, Logic, Scientific Writing, and Computer Programming with C++ and Java. Courses emphasized modeling, reasoning, and real‑world application.</p>
-      </article>
+        <article class="edu-card">
+          <div class="edu-card-header">
+            <div class="edu-card-header-left">
+              <h2>Los Angeles Harbor College (LAHC)</h2>
+              <span class="edu-status graduated">graduated</span>
+            </div>
+            <span class="edu-year">2021 – 2024</span>
+          </div>
+          <p class="edu-meta">Associate Degrees</p>
+          <ul class="edu-list">
+            <li>AS‑T in Mathematics (2022 – 2023)</li>
+            <li>AA in Liberal Arts: Arts &amp; Humanities (2022 – 2024)</li>
+            <li>AAS in Math &amp; Natural Sciences (2021 – 2023)</li>
+          </ul>
+          <p class="edu-desc">Gained hands‑on experience in Calculus, Discrete Math, Physics, Logic, Scientific Writing, and Computer Programming with C++ and Java. Courses emphasized modeling, reasoning, and real‑world application.</p>
+        </article>
 
-      <article class="edu-card">
-        <h2>🏫 Blue Ridge Academy</h2>
-        <p class="edu-meta"><strong>High School Diploma</strong> • <span>Graduated 2022</span></p>
-        <p>Developed foundational academic skills and curiosity that led me to pursue a career in STEM and technology.</p>
-      </article>
+        <article class="edu-card">
+          <div class="edu-card-header">
+            <div class="edu-card-header-left">
+              <h2>Blue Ridge Academy</h2>
+              <span class="edu-status graduated">graduated</span>
+            </div>
+            <span class="edu-year">2022</span>
+          </div>
+          <p class="edu-meta">High School Diploma</p>
+          <p class="edu-desc">Developed foundational academic skills and curiosity that led me to pursue a career in STEM and technology.</p>
+        </article>
+      </div>
     </section>
   </main>
 

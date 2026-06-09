@@ -5,67 +5,69 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Experience – Yusra Ashar</title>
-  <script>
-    !function(){try{
-      var t=localStorage.getItem("theme");
-      var d=window.matchMedia("(prefers-color-scheme: dark)").matches;
-      if(t==="dark"||(!t&&d)) document.documentElement.classList.add("dark");
-    }catch(e){}}();
-  </script>
-  <!-- Use a RELATIVE path so it works from subfolders too -->
-  <link rel="stylesheet" href="css/styles.css?v=7">
+  <link rel="stylesheet" href="css/styles.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
-  <!-- Header include -->
   <div id="header-placeholder"></div>
 
-  <main class="xp">
-    <header class="page-header">
-      <h1 class="page-title">Experience &amp; Projects</h1>
+  <main>
+    <div class="page-header">
+      <div class="section-label">// 01 — projects</div>
+      <h1>Experience &amp; Projects</h1>
       <p class="page-subtitle">A snapshot of completed work across web, software, and data.</p>
-    </header>
-
-    <!-- All items below are finished; phrased in past tense -->
-    <section>
-      <h2>🌐 Web Development — Internet Programming (CST 336)</h2>
-      <p><strong>California State University, Monterey Bay</strong> • <em>Completed</em></p>
-      <ul>
-        <li>Built a multi-page responsive site with accessible UI, componentized CSS, and clean semantic HTML.</li>
-        <li>Implemented interactive views and validated forms with modern, event-driven JavaScript.</li>
-        <li>Shipped a polished final app and documented deployment, including environment and build steps.</li>
-      </ul>
-      <p><a class="btn btn-ghost" href="courses/cst336.html">See the course work →</a></p>
-    </section>
+    </div>
 
     <section>
-      <h2>💻 Software Development (Academic)</h2>
-      <p><strong>California State University, Monterey Bay</strong> • <em>Completed</em></p>
-      <ul>
-        <li>Developed modular programs in Java and C++ with unit-tested data structures (queues, stacks, trees).</li>
-        <li>Produced GUI utilities in IDEs such as Xcode, Visual Studio, and Eclipse.</li>
-        <li>Used Git/GitHub for version control, code reviews, and releases.</li>
-      </ul>
-    </section>
+      <div class="xp-list">
+        <div class="xp-item">
+          <h2>Web Development — Internet Programming (CST 336)</h2>
+          <p class="xp-meta">California State University, Monterey Bay · Completed</p>
+          <ul>
+            <li>Built a multi-page responsive site with accessible UI, componentized CSS, and clean semantic HTML.</li>
+            <li>Implemented interactive views and validated forms with modern, event-driven JavaScript.</li>
+            <li>Shipped a polished final app and documented deployment, including environment and build steps.</li>
+          </ul>
+          <div class="xp-cta">
+            <a class="btn-ghost" href="courses/cst336.html">See the course work →</a>
+          </div>
+        </div>
 
-    <section>
-      <h2>🧠 Data Engineering — Database Systems (CST 363)</h2>
-      <p><strong>California State University, Monterey Bay</strong> • <em>Completed Jun 2025</em></p>
-      <ul>
-        <li>Designed normalized schemas and wrote SQL for constraints, joins, and indexes.</li>
-        <li>Created ERDs and a small C++ back-end for reporting over relational data.</li>
-        <li>Optimized queries and documented performance considerations and trade-offs.</li>
-      </ul>
-      <p><a class="btn btn-ghost" href="courses/cst363.html">See the course work →</a></p>
-    </section>
+        <div class="xp-item">
+          <h2>Software Development (Academic)</h2>
+          <p class="xp-meta">California State University, Monterey Bay · Completed</p>
+          <ul>
+            <li>Developed modular programs in Java and C++ with unit-tested data structures (queues, stacks, trees).</li>
+            <li>Produced GUI utilities in IDEs such as Xcode, Visual Studio, and Eclipse.</li>
+            <li>Used Git/GitHub for version control, code reviews, and releases.</li>
+          </ul>
+        </div>
 
-    <section>
-      <h2>📌 Current Status</h2>
-      <p>All course projects are wrapped up. While I’m not actively building a new course project right now, I do have a <strong>secret project underway</strong> 👀. I’m also open to feedback on my portfolio and future collaboration ideas.</p>
+        <div class="xp-item">
+          <h2>Data Engineering — Database Systems (CST 363)</h2>
+          <p class="xp-meta">California State University, Monterey Bay · Completed Jun 2025</p>
+          <ul>
+            <li>Designed normalized schemas and wrote SQL for constraints, joins, and indexes.</li>
+            <li>Created ERDs and a small C++ back-end for reporting over relational data.</li>
+            <li>Optimized queries and documented performance considerations and trade-offs.</li>
+          </ul>
+          <div class="xp-cta">
+            <a class="btn-ghost" href="courses/cst363.html">See the course work →</a>
+          </div>
+        </div>
+
+        <div class="xp-item">
+          <h2>Current Status</h2>
+          <p class="xp-meta">Ongoing</p>
+          <ul>
+            <li>All course projects are wrapped up. Working on a <strong style="color:var(--text)">secret project</strong> 👀.</li>
+            <li>Open to feedback on this portfolio and future collaboration ideas.</li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
 
-  <!-- Footer include -->
   <div id="footer-placeholder"></div>
   <script src="js/include.js"></script>
 </body>

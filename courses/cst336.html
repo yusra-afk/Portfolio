@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/svg+xml" href="images/yusra.svg">
+  <link rel="icon" type="image/svg+xml" href="../images/yusra.svg">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CST 336 - Internet Programming</title>
-
-  <!-- Theme boot -->
-  <script>
-    try {
-      const t = localStorage.getItem("theme");
-      const d = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      if (t === "dark" || (!t && d)) document.documentElement.classList.add("dark");
-    } catch(_) {}
-  </script>
-
-  <!-- ✅ Stylesheet -->
-  <link rel="stylesheet" href="../css/styles.css?v=4" />
-
-  <!-- ✅ Script -->
-  <script src="../js/script.js" defer></script>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/script.js" defer></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Space+Mono&display=swap');
+    body { background: #0a0a0f; color: #f0f0f5; font-family: 'Space Grotesk', sans-serif; }
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+    h1 { color: #f0f0f5; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: 2rem; }
+    section, .section { background: #111118; border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem; box-shadow: none; }
+    .section-label { font-family: 'Space Mono', monospace; font-size: 11px; color: #7c6dfa; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.5rem; display: block; }
+    h2 { color: #f0f0f5; font-weight: 600; margin-top: 0; }
+    h3 { color: #f0f0f5; font-weight: 600; margin-top: 0; }
+    p, li { color: #888896; }
+    p.lead { color: #aaa8b8; font-size: 1.05rem; margin-bottom: 2rem; }
+    a { color: #7c6dfa; }
+    ul, ol { color: #888896; }
+    iframe, embed, video { border-radius: 8px; border: 1px solid rgba(255,255,255,0.07); max-width: 100%; display: block; margin-bottom: 1rem; }
+    .btn, .btn-ghost { background: #7c6dfa; color: #fff; border-radius: 8px; border: none; padding: 10px 22px; font-weight: 600; text-decoration: none; display: inline-block; box-shadow: none; }
+    strong { color: #f0f0f5; }
+    /* Cards */
+    .cards { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .card { background: #16161f; border: 1px solid rgba(255,255,255,0.09); border-radius: 10px; padding: 1.5rem; }
+    .card .meta { font-family: 'Space Mono', monospace; font-size: 11px; color: #7c6dfa; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.5rem; }
+    /* Badges */
+    .badge-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.75rem 0; }
+    .badge { background: rgba(124,109,250,0.15); color: #7c6dfa; border: 1px solid rgba(124,109,250,0.3); border-radius: 4px; padding: 2px 8px; font-size: 12px; font-family: 'Space Mono', monospace; }
+    /* Skill grid */
+    .skill-grid { display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .skill { display: flex; justify-content: space-between; align-items: center; background: #16161f; border: 1px solid rgba(255,255,255,0.07); border-radius: 8px; padding: 0.75rem 1rem; color: #f0f0f5; font-size: 0.9rem; }
+    .pill { background: rgba(124,109,250,0.15); color: #7c6dfa; border-radius: 4px; padding: 2px 8px; font-size: 11px; font-family: 'Space Mono', monospace; white-space: nowrap; }
+    /* Linkhub */
+    .linkhub { background: #111118; border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem; text-align: center; }
+    .link-row { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; margin-top: 1rem; }
+    .link-pill { background: #7c6dfa; color: #fff; border-radius: 8px; padding: 8px 18px; font-weight: 600; text-decoration: none; font-size: 0.9rem; }
+    /* Video wrapper */
+    .media-16x9 { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; border: 1px solid rgba(255,255,255,0.07); margin-bottom: 1rem; }
+    .media-16x9 video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px; border: none; }
+    /* Muted text */
+    .muted { color: #888896; }
+    /* Back link */
+    .back-link { color: #7c6dfa; text-decoration: none; display: inline-block; margin-top: 1rem; }
+  </style>
 </head>
 <body class="page-cst336">
   <div id="header-placeholder"></div>
@@ -32,9 +58,9 @@
     </p>
 
     <section class="section" aria-labelledby="work-heading">
+      <span class="section-label">Work</span>
       <h2 id="work-heading">Key Work</h2>
       <div class="cards">
-        <!-- Card 1: HW – US Geography Quiz -->
         <article class="card" aria-labelledby="quiz-title">
           <div class="meta">HW • Front-end • Accessibility</div>
           <h3 id="quiz-title">US Geography Quiz</h3>
@@ -50,10 +76,10 @@
             <span class="badge">A11y</span>
           </div>
           <a href="#" target="_blank" rel="noopener">Live Demo</a>
+          &nbsp;
           <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
         </article>
 
-        <!-- Card : Final / Showcase -->
         <article class="card" aria-labelledby="final-title">
           <div class="meta">Showcase • Front-end</div>
           <h3 id="final-title">Final Project</h3>
@@ -67,9 +93,9 @@
             <span class="badge">Deployment</span>
           </div>
           <a href="#" target="_blank" rel="noopener">Live Demo</a>
+          &nbsp;
           <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
 
-          <!-- ✅ Constrained video wrapper -->
           <div class="media-16x9">
             <video controls preload="metadata">
               <source src="../assets/CST 336 - Final Project Video.mp4" type="video/mp4">
@@ -85,6 +111,7 @@
     </section>
 
     <section class="section" aria-labelledby="skills-heading">
+      <span class="section-label">Skills</span>
       <h2 id="skills-heading">Skills & Tools</h2>
       <div class="skill-grid">
         <div class="skill"><span>Semantic HTML & Responsive CSS</span><span class="pill">Flex • Grid</span></div>
@@ -94,13 +121,14 @@
         <div class="skill"><span>Tooling</span><span class="pill">Git • GitHub • VS Code</span></div>
         <div class="skill"><span>Deployment</span><span class="pill">Netlify / Vercel</span></div>
       </div>
-      <p class="section muted" style="text-align:center; margin-top:.6rem;">
-        * I’ll keep expanding this page with deep dives, code snippets, and retros as I iterate.
+      <p class="muted" style="text-align:center; margin-top:.6rem;">
+        * I'll keep expanding this page with deep dives, code snippets, and retros as I iterate.
       </p>
     </section>
 
     <section class="linkhub" aria-labelledby="links-heading">
-      <h2 id="links-heading" style="text-align:center; color:var(--accent-soft);">My Websites</h2>
+      <span class="section-label">Links</span>
+      <h2 id="links-heading" style="text-align:center; color:#7c6dfa;">My Websites</h2>
       <div class="link-row">
         <a class="link-pill" href="#" target="_blank" rel="noopener">Main Portfolio</a>
         <a class="link-pill" href="#" target="_blank" rel="noopener">CST 336 Project Hub</a>
@@ -110,7 +138,8 @@
     </section>
 
     <section class="section" aria-labelledby="reflection-heading">
-      <h2 id="reflection-heading">What I’m Proud Of</h2>
+      <span class="section-label">Reflection</span>
+      <h2 id="reflection-heading">What I'm Proud Of</h2>
       <ol class="muted" style="max-width:800px;margin:0 auto 1rem; line-height:1.8;">
         <li><strong>Clean, readable code</strong> – with comments explaining tricky bits (e.g., debounced input handlers).</li>
         <li><strong>Accessibility</strong> – labeled form controls, keyboard-friendly interactions, and ARIA attributes.</li>
@@ -122,7 +151,6 @@
   </main>
 
   <div id="footer-placeholder"></div>
-
   <script src="../js/include.js"></script>
 </body>
 </html>
