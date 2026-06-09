@@ -1054,3 +1054,135 @@ main > h1 {
 }
 
 .media-16x9 video { width: 100%; height: 100%; object-fit: cover; }
+
+/* ============================================================
+   INDIVIDUAL COURSE PAGES  (body.course-page)
+   ============================================================ */
+body.course-page main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem 5rem;
+}
+
+body.course-page main > h1 {
+  padding: 80px 0 1.75rem;
+  max-width: none;
+}
+
+body.course-page section {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.75rem 2rem;
+  margin: 0 0 1rem;
+  max-width: none;
+}
+
+body.course-page section > .section-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+body.course-page section h2 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.85rem;
+  color: var(--text);
+}
+
+body.course-page section embed,
+body.course-page section iframe,
+body.course-page section video {
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  width: 100%;
+  display: block;
+  margin: 0.75rem 0 1rem;
+}
+
+body.course-page section img {
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  max-width: 100%;
+}
+
+body.course-page main > p,
+body.course-page main > a.back-link {
+  padding: 0;
+  padding-bottom: 0.5rem;
+}
+
+/* Skill grid (cst336) */
+.skill-grid {
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.65rem 1rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.pill {
+  background: var(--accent-dim);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 10px;
+  font-family: var(--mono);
+  white-space: nowrap;
+}
+
+/* Link hub (cst336) */
+.linkhub {
+  text-align: center;
+}
+
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.link-pill {
+  background: var(--accent);
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: background 0.15s;
+  display: inline-block;
+}
+
+.link-pill:hover { background: #9085fc; color: #fff !important; }
+
+.back-link {
+  color: var(--accent);
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+
+.back-link:hover { color: var(--text); text-decoration: none; }
+
+@media (max-width: 768px) {
+  body.course-page main { padding: 0 1rem 4rem; }
+  body.course-page main > h1 { padding-top: 60px; padding-bottom: 1.25rem; }
+  body.course-page section { padding: 1.25rem; }
+}
