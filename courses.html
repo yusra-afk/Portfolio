@@ -4,16 +4,118 @@
   <link rel="icon" type="image/svg+xml" href="images/yusra.svg">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects – Yusra Ashar</title>
+  <title>Coursework – Yusra Ashar</title>
   <link rel="stylesheet" href="/css/styles.css">
-  <script src="js/script.js" defer></script>
+  <script src="/js/script.js" defer></script>
+  <style>
+    /* --- course grid: separate, rounded, springy cards --- */
+    main .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.75rem;
+      align-items: stretch;
+    }
+
+    main .grid .course-box {
+      display: flex;
+      flex-direction: column;
+      background: #111118;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 22px;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+      transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  box-shadow 0.35s ease,
+                  border-color 0.35s ease;
+      will-change: transform;
+    }
+
+    main .grid .course-box:hover,
+    main .grid .course-box:focus-within {
+      transform: translateY(-10px);
+      border-color: rgba(124, 109, 250, 0.45);
+      box-shadow: 0 22px 45px rgba(0, 0, 0, 0.55),
+                  0 0 0 1px rgba(124, 109, 250, 0.18);
+    }
+
+    /* previews are square (1254x1254) on a #00051a field, so contain them
+       against a matching backdrop instead of cropping to a short slot */
+    main .grid .course-box img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 3;
+      object-fit: contain;
+      object-position: center;
+      background: #00051a;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 0;
+      margin: 0;
+    }
+
+    main .grid .course-box > h2 {
+      margin: 1.35rem 1.5rem 0.45rem;
+      font-size: 1.05rem;
+      line-height: 1.35;
+    }
+
+    main .grid .course-box > p {
+      margin: 0 1.5rem 0.85rem;
+    }
+
+    main .grid .course-box > .course-term {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      opacity: 0.6;
+      margin-bottom: 0.7rem;
+    }
+
+    main .grid .course-box > a {
+      align-self: flex-start;
+      margin: auto 1.5rem 1.5rem;
+      padding-top: 0.4rem;
+      color: #7c6dfa;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    main .grid .course-box:hover > a,
+    main .grid .course-box:focus-within > a {
+      transform: translateX(5px);
+    }
+
+    main .grid .course-box > a:focus-visible {
+      outline: 2px solid #7c6dfa;
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      main .grid .course-box,
+      main .grid .course-box > a {
+        transition: none;
+      }
+      main .grid .course-box:hover,
+      main .grid .course-box:focus-within,
+      main .grid .course-box:hover > a,
+      main .grid .course-box:focus-within > a {
+        transform: none;
+      }
+    }
+  </style>
 </head>
 <body>
 <header class="header-wrapper">
   <nav aria-label="Primary">
     <a href="/index.html" class="brand-logo">ya_portfolio.js</a>
     <a href="/about.html">About</a>
-    <a href="/courses.html">Projects</a>
+    <a href="/courses.html">Coursework</a>
     <a href="/education.html">Education</a>
     <a href="/experience.html">Experience</a>
     <a href="/contact.html">Contact</a>
@@ -35,53 +137,124 @@
 
   <main>
     <div class="page-header">
-      <div class="section-label">// all projects</div>
+      <div class="section-label">// coursework</div>
       <h1>My Courses at CSUMB</h1>
-      <p class="page-subtitle">Explore each course to see the work done.</p>
+      <p class="page-subtitle">All 14 courses in my Computer Science pathway. Each page includes the CSUMB catalog
+      description, learning outcomes, and my project work or course evidence.</p>
     </div>
 
     <section>
       <div class="grid">
         <div class="course-box">
-          <img src="images/cst300-preview.png" alt="CST 300 Preview">
+          <img src="images/cst300-preview.png" alt="CST 300 preview">
           <h2>CST 300 — Major ProSeminar</h2>
-          <p>Professional communication, ethics, and a final reflective portfolio.</p>
+          <p class="course-term">Fall 2024</p>
+          <p>Professional communication, research, and computing ethics. Produced an ethics position paper and oral presentation.</p>
           <a href="courses/cst300.html">View Course →</a>
         </div>
 
         <div class="course-box">
-          <img src="images/cst338-preview.png" alt="CST 338 Preview">
+          <img src="images/cst338-preview.png" alt="CST 338 preview">
           <h2>CST 338 — Software Design</h2>
-          <p>Object-oriented Java development. Final project: Ghetto Yelp App (GUI).</p>
+          <p class="course-term">Fall 2024</p>
+          <p>Object-oriented design in Java. Final project: a GUI review application with full design documentation.</p>
           <a href="courses/cst338.html">View Course →</a>
         </div>
 
         <div class="course-box">
-          <img src="images/cst334-preview.png" alt="CST 334 Preview">
+          <img src="images/cst334-preview.png" alt="CST 334 preview">
           <h2>CST 334 — Operating Systems</h2>
-          <p>Memory management and concurrency. Final project: custom allocator.</p>
+          <p class="course-term">Spring 2025</p>
+          <p>Processes, memory management, and concurrency in C. Group project on performance debugging.</p>
           <a href="courses/cst334.html">View Course →</a>
         </div>
 
         <div class="course-box">
-          <img src="images/cst363-preview.png" alt="CST 363 Preview">
-          <h2>CST 363 — Database Systems</h2>
-          <p>ERDs, SQL queries, normal forms. Designed and documented a full schema.</p>
+          <img src="images/cst363-preview.png" alt="CST 363 preview">
+          <h2>CST 363 — Introduction to Database Systems</h2>
+          <p class="course-term">Spring 2025</p>
+          <p>ER modeling, normalization, and SQL. Built a prescription management web application.</p>
           <a href="courses/cst363.html">View Course →</a>
         </div>
 
         <div class="course-box">
-          <img src="images/cst311-preview.png" alt="CST 311 Preview">
-          <h2>CST 311 — Computer Networks</h2>
-          <p>TCP/IP, routing, and socket programming in Python for chat app.</p>
+          <img src="images/cst311-preview.png" alt="CST 311 preview">
+          <h2>CST 311 — Introduction to Computer Networks</h2>
+          <p class="course-term">Summer 2025</p>
+          <p>TCP/IP, routing, and subnetting. Built a group chat over an emulated Mininet topology.</p>
           <a href="courses/cst311.html">View Course →</a>
         </div>
 
         <div class="course-box">
-          <img src="images/cst336-preview.png" alt="CST 336 Preview">
+          <img src="images/cst336-preview.png" alt="CST 336 preview">
           <h2>CST 336 — Internet Programming</h2>
-          <p>Frontend + backend dev with HTML/CSS, JavaScript, PHP. Built quiz app.</p>
+          <p class="course-term">Summer 2025</p>
+          <p>Full-stack web development with HTML/CSS, JavaScript, and PHP. Built two data-driven applications.</p>
           <a href="courses/cst336.html">View Course →</a>
+        </div>
+
+        <div class="course-box">
+          <img src="images/cst328-preview.png" alt="CST 328 preview">
+          <h2>CST 328 — Digital Art and Design</h2>
+          <p class="course-term">Fall 2025</p>
+          <p>Design systems, typography, and interface composition. Final project: the Nova mobile app, taken from lo-fi wireframes to an interactive Figma prototype.</p>
+          <a href="courses/cst328.html">View Course →</a>
+        </div>
+
+        <div class="course-box">
+          <img src="images/cst370-preview.png" alt="CST 370 preview">
+          <h2>CST 370 — Design and Analysis of Algorithms</h2>
+          <p class="course-term">Fall 2025</p>
+          <p>Asymptotic analysis, core data structures, and the major algorithm design paradigms. Built a hash-based Sudoku validator in C++.</p>
+          <a href="courses/cst370.html">View Course →</a>
+        </div>
+
+        <div class="course-box">
+          <img src="images/cst462s-preview.png" alt="CST 462S preview">
+          <h2>CST 462S — Race, Gender, Class in the Digital World</h2>
+          <p class="course-term">Fall 2025</p>
+          <p>Service learning on equity in technology. Led a four-person research study on transparency and patient trust in AI diagnostic tools, based on 14 interviews.</p>
+          <a href="courses/cst462s.html">View Course →</a>
+        </div>
+
+        <div class="course-box">
+          <img src="images/cst383-preview.png" alt="CST 383 preview">
+          <h2>CST 383 — Introduction to Data Science</h2>
+          <p class="course-term">Spring 2026</p>
+          <p>The Python data science pipeline: wrangling, visualization, and supervised learning with scikit-learn. Final project on customer churn prediction.</p>
+          <a href="courses/cst383.html">View Course →</a>
+        </div>
+
+        <div class="course-box">
+          <img src="images/cst438-preview.png" alt="CST 438 preview">
+          <h2>CST 438 — Software Engineering</h2>
+          <p class="course-term">Spring 2026</p>
+          <p>Agile/Scrum team delivery, requirements engineering, UML system design, and peer review.</p>
+          <a href="courses/cst438.html">View Course →</a>
+        </div>
+
+        <div class="course-box">
+          <img src="images/cst329-preview.png" alt="CST 329 preview">
+          <h2>CST 329 — Reasoning with Logic</h2>
+          <p class="course-term">Summer 2026</p>
+          <p>Propositional and first-order logic, formal proof construction, and three-valued and modal logic.</p>
+          <a href="courses/cst329.html">View Course →</a>
+        </div>
+
+        <div class="course-box">
+          <img src="images/cst489-preview.png" alt="CST 489 preview">
+          <h2>CST 489 — Capstone Project Planning</h2>
+          <p class="course-term">Summer 2026</p>
+          <p>Scoped and wrote the ComicSeen capstone proposal as team coordinator, including a codebase audit of the platform's notification architecture.</p>
+          <a href="courses/cst489.html">View Course →</a>
+        </div>
+
+        <div class="course-box">
+          <img src="images/cst499-preview.png" alt="CST 499 preview">
+          <h2>CST 499 — Computer Science Capstone</h2>
+          <p class="course-term">Summer 2026</p>
+          <p>Shipped an event-driven notification system to ComicSeen, a live comedy booking platform. Team coordinator and owner of the Notification System Refactor.</p>
+          <a href="courses/cst499.html">View Course →</a>
         </div>
       </div>
     </section>

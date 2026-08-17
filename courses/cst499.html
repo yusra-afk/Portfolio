@@ -4,23 +4,29 @@
   <link rel="icon" type="image/svg+xml" href="../images/yusra.svg">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CST 499 — Senior Capstone</title>
+  <title>CST 499 - Computer Science Capstone</title>
   <link rel="stylesheet" href="/css/styles.css">
   <script src="/js/script.js" defer></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Space+Mono&display=swap');
     body { background: #0a0a0f; color: #f0f0f5; font-family: 'Space Grotesk', sans-serif; }
     main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
-    h1 { color: #f0f0f5; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: 2rem; }
+    h1 { color: #f0f0f5; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: 0.5rem; }
+    .course-meta { font-family: 'Space Mono', monospace; font-size: 12px; color: #888896; letter-spacing: 0.08em; margin-bottom: 2rem; }
     section { background: #111118; border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem; box-shadow: none; }
     .section-label { font-family: 'Space Mono', monospace; font-size: 11px; color: #7c6dfa; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.5rem; display: block; }
     h2 { color: #f0f0f5; font-weight: 600; margin-top: 0; }
+    h3 { color: #f0f0f5; font-weight: 600; font-size: 1rem; margin-bottom: 0.4rem; margin-top: 1.5rem; }
     p, li { color: #888896; }
     a { color: #7c6dfa; }
     ul { color: #888896; }
     iframe, embed, video { border-radius: 8px; border: 1px solid rgba(255,255,255,0.07); max-width: 100%; display: block; margin-bottom: 1rem; }
+    .video-wrap { position: relative; padding-bottom: 56.25%; height: 0; margin-bottom: 1rem; }
+    .video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin-bottom: 0; }
     .btn, .btn-ghost { background: #7c6dfa; color: #fff; border-radius: 8px; border: none; padding: 10px 22px; font-weight: 600; text-decoration: none; display: inline-block; box-shadow: none; }
     strong { color: #f0f0f5; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1rem; }
+    .tag { font-family: 'Space Mono', monospace; font-size: 11px; color: #888896; border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; padding: 5px 12px; }
   </style>
 </head>
 <body>
@@ -28,7 +34,7 @@
   <nav aria-label="Primary">
     <a href="/index.html" class="brand-logo">ya_portfolio.js</a>
     <a href="/about.html">About</a>
-    <a href="/courses.html">Projects</a>
+    <a href="/courses.html">Coursework</a>
     <a href="/education.html">Education</a>
     <a href="/experience.html">Experience</a>
     <a href="/contact.html">Contact</a>
@@ -49,18 +55,108 @@
 </header>
 
   <main>
-    <h1>CST 499 — Senior Capstone</h1>
+    <h1>CST 499 - Computer Science Capstone</h1>
+    <p class="course-meta">SUMMER 2026 · SHIPPED TO PRODUCTION AT COMICSEEN.COM</p>
 
     <section>
       <span class="section-label">Overview</span>
       <h2>Course Overview</h2>
-      <p>Course content and project work coming soon.</p>
+      <p>CST 499 is the build half of the capstone. Teams take the proposal approved in CST 489 and deliver it: requirements specification, solution plan, design, implementation, testing, and a final demonstration. The course runs like a work environment, with faculty acting as project manager and students expected to be self directed, make measurable progress each week, and raise blockers rather than sit on them.</p>
+      <p>My team built into <a href="https://comicseen.com" target="_blank" rel="noopener">ComicSeen</a>, a live commercial booking platform for the stand-up comedy scene, mentored by founder <strong>Justin Greenberg</strong>. All four proposed features were completed, merged, and deployed. The platform is in production and used by working comedy producers and comedians.</p>
+      <div class="tag-row">
+        <span class="tag">Spring Boot 3.2.4</span>
+        <span class="tag">Java 22</span>
+        <span class="tag">React</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">WebSocket / STOMP</span>
+        <span class="tag">Docker</span>
+        <span class="tag">Kubernetes</span>
+        <span class="tag">GitHub Actions</span>
+      </div>
     </section>
 
     <section>
-      <span class="section-label">Work</span>
-      <h2>Projects &amp; Work</h2>
-      <p>Project details, demos, and write-ups coming soon. Check back after the semester wraps up!</p>
+      <span class="section-label">Outcomes</span>
+      <h2>Course Outcomes</h2>
+      <ul style="text-align: left; max-width: 800px; margin: 0 auto;">
+        <li>Apply software engineering skills to a real world project with an external client.</li>
+        <li>Solve problems without step by step instructions, breaking a large objective into deliverable pieces.</li>
+        <li>Evaluate work incrementally and improve quality through iteration.</li>
+        <li>Collaborate with a team and a client through a professional version control and review workflow.</li>
+        <li>Learn new technologies and techniques as the project requires them.</li>
+        <li>Prepare for a professional career through a resume, LinkedIn profile, portfolio, and career development plan.</li>
+      </ul>
+    </section>
+
+    <section>
+      <span class="section-label">Demo</span>
+      <h2>Final Project Demonstration</h2>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/Et423RxeZ3g" title="ComicSeen Capstone Final Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p>Final walkthrough of all four completed features on the live platform.</p>
+    </section>
+
+    <section>
+      <span class="section-label">Build</span>
+      <h2>What the Team Shipped</h2>
+      <p>Four features, one codebase. They share the same authentication layer, user model, and database, so they are integrated parts of one product rather than four separate add-ons. Messaging, signups, and the show and booking flows all publish into the same notification pipeline, so a new message, a signup, or a cancellation travels one shared path.</p>
+      <ul style="text-align: left; max-width: 800px; margin: 0 auto;">
+        <li><strong>Notification System Refactor</strong> (Yusra Ashar): event-driven notifications on Spring application events, six event types wired end to end.</li>
+        <li><strong>In-App Messaging System</strong> (Sam Numan): real-time producer to comic messaging with role enforcement, unread tracking, and email alerts for offline recipients.</li>
+        <li><strong>Calendar of Availability</strong> (Shane Ritter): comedian availability scheduling plus producer-side filtering and a booking request workflow.</li>
+        <li><strong>EPK Profile</strong> (Vivian Le): redesigned comedian press kit and edit experience, plus frontend test coverage wired into the deployment workflow.</li>
+      </ul>
+
+      <h3>My contribution: the event-driven notification system</h3>
+      <p>I replaced a tightly coupled notification model, where email was sent inline inside transactional business methods, with an event-driven system built on Spring application events. Business services now publish a domain event and know nothing about email. A listener resolves the recipient, checks that user's notification preference, and only then sends.</p>
+      <ul style="text-align: left; max-width: 800px; margin: 0 auto;">
+        <li>Six event types wired end to end, covering signups, drops, bookings, show cancellations, and add, remove, and replace lineup changes.</li>
+        <li>Delivery gated on <code>@TransactionalEventListener(phase = AFTER_COMMIT)</code>, so a rolled back transaction can never produce a misleading confirmation email.</li>
+        <li>Email moved off the HTTP request thread with <code>@Async</code> on a dedicated bounded thread pool, so a slow or failing email provider no longer delays a user's signup response.</li>
+        <li>Fixed a live bug where showcase drop notifications were permanently dead code, by carrying show type into the event and branching at a single point for both the preference check and the email method.</li>
+        <li>Wrote a 22 test backend suite covering preference filtering, event dispatch, and the transaction boundary behavior.</li>
+      </ul>
+
+      <h3>Scope changes during the build</h3>
+      <p>The core objectives held, but scope moved with the mentor. Notifications expanded to include show cancellation and lineup change emails. Messaging grew to cover producer to producer conversations. Availability moved to phased delivery: the dashboard calendar shipped to production while the booking workflow, though feature complete, waits behind an upcoming paid subscription tier, a sequencing decision by the platform owner. Testing also grew well beyond the unit tests we originally proposed.</p>
+    </section>
+
+    <section>
+      <span class="section-label">Testing</span>
+      <h2>Testing and Evaluation Report</h2>
+      <p>We ran moderated usability sessions with four testers matched to the platform's two personas. Abdullah tested the producer workflow. Aline, Sabrina, and Steven acted as comedian-persona testers. Each tester thought aloud while a team observer took notes, exercising the workflows on the live production platform, with the availability booking workflow tested on a development build. I coordinated the sessions and assembled the report, with each member authoring the results for their own feature area.</p>
+
+      <h3>Results</h3>
+      <ul style="text-align: left; max-width: 800px; margin: 0 auto;">
+        <li>All four testers completed every assigned task. No task ended in failure.</li>
+        <li>Testers observed the full notification loop live: an email on message receipt, an unread badge appearing in real time, and the show lifecycle emails arriving within moments.</li>
+        <li>Role-based access worked as intended, with searches correctly scoped to producer and comic pairings only.</li>
+        <li>Two consistent friction points surfaced. Three testers clicked Sign Up and landed on the Login page, traced to the homepage button pointing at the show-slot signup route instead of registration. And after a producer booked comedians, their dashboards did not reflect the booking, so comics had to search for the show to confirm they were on the lineup.</li>
+        <li>Two testers paused at the term EPK without knowing what it meant, which is a labeling problem rather than a design one.</li>
+      </ul>
+
+      <h3>Changes driven by testing</h3>
+      <p>Before the festival: route the Sign Up button directly to registration, and surface bookings on the comedian dashboard. Longer term: introduce the EPK term with a plain explanation, add an in-app notification center and settings, deploy the booking workflow with the subscription tier, and pursue the EPK interface refinements, which need the platform owner's approval since they change a live product.</p>
+
+      <p style="margin-top:1.5rem;"><strong>Full Testing and Evaluation Report:</strong></p>
+      <embed src="../assets/ComicSeen_Testing_Report.pdf" width="100%" height="600px" type="application/pdf" />
+      <p><a href="../assets/ComicSeen_Testing_Report.pdf" target="_blank">Download PDF</a></p>
+    </section>
+
+    <section>
+      <span class="section-label">Archive</span>
+      <h2>Project Archive and Source Code</h2>
+      <p>The ComicSeen repository is private and owned by our industry mentor, who runs ComicSeen as an active commercial business. The codebase is his intellectual property and handles real user data, so it cannot be redistributed outside his ownership. We confirmed this constraint with him directly.</p>
+      <p>Rather than excerpt fragments of proprietary source, the team documented the work through three forms of evidence that can be verified without repository access: the deployed product itself at comicseen.com, pull request records for each team member showing every change they made across the semester, and the testing and evaluation report above.</p>
+      <p><a href="../assets/ComicSeen_Archive_README.txt" target="_blank">Read the full project archive notes</a></p>
+    </section>
+
+    <section>
+      <span class="section-label">Reflection</span>
+      <h2>What I Took From This Course</h2>
+      <p>Shipping into a production codebase with real users changed what "done" meant. A refactor that works on my machine is not the deliverable. The deliverable is a change that cannot send a confirmation email for a signup that failed, cannot block a user's response on a third party API, and does not break the five other things touching the same pipeline. Most of my engineering judgment this semester went into transaction boundaries and failure modes rather than features.</p>
+      <p>The usability sessions were the other lesson. Every tester finished every task, which could easily have been read as a clean result, but watching three of them click the wrong Sign Up button in a row surfaced a real defect that no test suite would have caught. Working with a client who owns the product also meant accepting that some completed work ships on his schedule rather than mine, which is closer to how engineering actually works than any previous course.</p>
     </section>
 
     <p style="text-align:center; margin-top:1rem;"><a href="../courses.html">← Back to Courses</a></p>

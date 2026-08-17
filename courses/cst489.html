@@ -4,23 +4,27 @@
   <link rel="icon" type="image/svg+xml" href="../images/yusra.svg">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CST 489 — Capstone Project Planning</title>
+  <title>CST 489 - Capstone Project Planning</title>
   <link rel="stylesheet" href="/css/styles.css">
   <script src="/js/script.js" defer></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Space+Mono&display=swap');
     body { background: #0a0a0f; color: #f0f0f5; font-family: 'Space Grotesk', sans-serif; }
     main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
-    h1 { color: #f0f0f5; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: 2rem; }
+    h1 { color: #f0f0f5; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: 0.5rem; }
+    .course-meta { font-family: 'Space Mono', monospace; font-size: 12px; color: #888896; letter-spacing: 0.08em; margin-bottom: 2rem; }
     section { background: #111118; border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem; box-shadow: none; }
     .section-label { font-family: 'Space Mono', monospace; font-size: 11px; color: #7c6dfa; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.5rem; display: block; }
     h2 { color: #f0f0f5; font-weight: 600; margin-top: 0; }
+    h3 { color: #f0f0f5; font-weight: 600; font-size: 1rem; margin-bottom: 0.4rem; margin-top: 1.5rem; }
     p, li { color: #888896; }
     a { color: #7c6dfa; }
     ul { color: #888896; }
     iframe, embed, video { border-radius: 8px; border: 1px solid rgba(255,255,255,0.07); max-width: 100%; display: block; margin-bottom: 1rem; }
     .btn, .btn-ghost { background: #7c6dfa; color: #fff; border-radius: 8px; border: none; padding: 10px 22px; font-weight: 600; text-decoration: none; display: inline-block; box-shadow: none; }
     strong { color: #f0f0f5; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1rem; }
+    .tag { font-family: 'Space Mono', monospace; font-size: 11px; color: #888896; border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; padding: 5px 12px; }
   </style>
 </head>
 <body>
@@ -28,7 +32,7 @@
   <nav aria-label="Primary">
     <a href="/index.html" class="brand-logo">ya_portfolio.js</a>
     <a href="/about.html">About</a>
-    <a href="/courses.html">Projects</a>
+    <a href="/courses.html">Coursework</a>
     <a href="/education.html">Education</a>
     <a href="/experience.html">Experience</a>
     <a href="/contact.html">Contact</a>
@@ -49,18 +53,77 @@
 </header>
 
   <main>
-    <h1>CST 489 — Capstone Project Planning</h1>
+    <h1>CST 489 - Capstone Project Planning</h1>
+    <p class="course-meta">SUMMER 2026 · CREDIT / NO CREDIT · MENTORED CAPSTONE</p>
 
     <section>
       <span class="section-label">Overview</span>
       <h2>Course Overview</h2>
-      <p>Course content and project work coming soon.</p>
+      <p>CST 489 is the planning half of the CSUMB computer science capstone. Students write a detailed proposal for a substantial, professional level project, get it approved by a capstone advisor, and practice the project planning, collaboration, and technical writing expected in industry. The proposal has to define a real problem with a real external client, scope roughly 100 to 200 hours of work, and commit to deliverables the team will be graded against in CST 499.</p>
+      <p>My team of four was mentored by <strong>Justin Greenberg</strong>, founder of ComicSeen, with <strong>Dr. Bude Su</strong> as course instructor. ComicSeen is a live commercial booking platform for the stand-up comedy scene, so this was not a sandbox project. Everything we proposed had to be shippable into a production codebase with real users.</p>
+      <div class="tag-row">
+        <span class="tag">requirements gathering</span>
+        <span class="tag">environmental scan</span>
+        <span class="tag">AI-assisted prototyping</span>
+        <span class="tag">agile planning</span>
+        <span class="tag">client communication</span>
+      </div>
     </section>
 
     <section>
-      <span class="section-label">Work</span>
-      <h2>Projects &amp; Work</h2>
-      <p>Project details, demos, and write-ups coming soon. Check back after the semester wraps up!</p>
+      <span class="section-label">Outcomes</span>
+      <h2>Course Outcomes</h2>
+      <ul style="text-align: left; max-width: 800px; margin: 0 auto;">
+        <li>Apply knowledge from the degree program to a real world problem of importance to an external client.</li>
+        <li>Communicate with a client to gather requirements and develop a project proposal that meets them.</li>
+        <li>Work in a team and apply the soft skills expected in professional environments.</li>
+        <li>Break a large problem into smaller pieces and articulate the big picture behind it.</li>
+        <li>Develop detailed plans, timelines, and testing strategies, then execute against them.</li>
+        <li>Learn new technologies and approaches as needed to achieve project objectives.</li>
+      </ul>
+    </section>
+
+    <section>
+      <span class="section-label">Project</span>
+      <h2>Capstone Proposal: ComicSeen Platform Feature Improvements</h2>
+      <p><strong>Team:</strong> Yusra Ashar, Sam Numan, Shane Ritter, Vivian Le · <strong>Mentor:</strong> Justin Greenberg · <strong>My role:</strong> Team coordinator, notification system refactor owner, and proposal assembly</p>
+
+      <h3>The problem</h3>
+      <p>Comedy booking has historically been scattered across Facebook groups, text threads, email chains, and spreadsheets. Comedians have no professional producer-facing presence and no way to publish their availability. Producers spend time tracking performer information manually. Our environmental scan looked at Eventbrite, GigSalad, Facebook Groups, and Meetup and found that each solves an adjacent problem, ticketing or general entertainment booking or informal chat, but none handles the actual comedy workflow of a producer running shows, comics signing up, both parties communicating, and the right notifications firing at the right time. Meanwhile the live comedy industry has grown sharply, which makes manual coordination a real bottleneck rather than a minor inconvenience.</p>
+
+      <h3>Proposed scope</h3>
+      <p>We scoped four features into the existing React and Spring Boot codebase, one per team member, sharing a single authentication layer, user model, and database:</p>
+      <ul style="text-align: left; max-width: 800px; margin: 0 auto;">
+        <li><strong>Notification System Refactor</strong> (mine): move from tightly coupled inline email calls to an event-driven architecture using Spring ApplicationEvents.</li>
+        <li><strong>In-App Messaging System</strong> (Sam): real-time producer to comic messaging over WebSocket and STOMP with role enforcement.</li>
+        <li><strong>Calendar of Availability</strong> (Shane): comic availability scheduling plus producer-side search, filtering, and booking requests.</li>
+        <li><strong>EPK Profile</strong> (Vivian): a professional, producer-facing electronic press kit for comedians.</li>
+      </ul>
+
+      <h3>My planning work: the notification refactor</h3>
+      <p>Before proposing anything I ran a six phase analysis of the existing codebase, three phases to map how notifications actually worked and three to design the replacement. The audit surfaced five specific tight coupling violations where email was being sent inline inside transactional business methods, blocking the HTTP request thread on an external API call. It also surfaced a live production bug: <code>SHOWCASE_DROP_NOTIFICATION</code> was defined in the enum, handled in the email service, and stored as a user preference, but never triggered anywhere, because the drop method never fetched the show and so never knew its type. That whole notification path was dead code.</p>
+      <p>The proposed design used a domain event per trigger, an <code>ApplicationEventPublisher</code> in the business services, and a listener annotated with <code>@TransactionalEventListener(phase = AFTER_COMMIT)</code> so no email can fire on a rolled back transaction, plus <code>@Async</code> on a dedicated thread pool so a slow or failed email provider never delays a user's signup response.</p>
+
+      <h3>Where human judgment mattered</h3>
+      <p>The proposal required a critical evaluation of AI-assisted development, which turned out to be the most useful section to write. The AI generated a technically sound architecture, but it did not know that our mentor had scoped us to Spring events rather than Kafka for a single app instance, it assumed a repository method existed without verifying it, it proposed broader changes than the client asked for, and it suggested <code>@TransactionalEventListener</code> without explaining the implication that a plain listener would have sent confirmation emails for failed signups. Deciding which callers to refactor and which to leave alone in a production codebase was a scoping call, not a code generation call.</p>
+
+      <p style="margin-top:1.5rem;"><strong>Full Capstone Proposal (45 pages):</strong></p>
+      <embed src="../assets/ComicSeen_Capstone_Proposal.pdf" width="100%" height="600px" type="application/pdf" />
+      <p><a href="../assets/ComicSeen_Capstone_Proposal.pdf" target="_blank">Download PDF</a></p>
+    </section>
+
+    <section>
+      <span class="section-label">Evidence</span>
+      <h2>Mid-Semester Status Update</h2>
+      <p>Mid-semester presentation delivered to Dr. Su and the course, covering progress against the proposal timeline, what each team member had implemented, and what remained for the build phase.</p>
+      <p><a class="btn" href="https://docs.google.com/videos/d/1thJM0o3ExGA1alRqFLdIngfedgJVq5mmESJ_aP5uynQ/edit?usp=sharing" target="_blank" rel="noopener">View Status Update Presentation</a></p>
+    </section>
+
+    <section>
+      <span class="section-label">Reflection</span>
+      <h2>What I Took From This Course</h2>
+      <p>The planning half taught me that the hardest part of a real project is not the code, it is agreeing on what the code is supposed to do. Writing a proposal for a live commercial product meant every feature had to survive a conversation with an owner who knew the domain better than we did, and several of my early assumptions did not survive. Reading an unfamiliar production codebase closely enough to find a dead notification path also changed how I approach new repositories: the interesting problems are usually in what the code fails to do rather than what it does.</p>
+      <p>Coordinating four people across four feature areas meant keeping the branches, the timeline, and the mentor check-ins aligned while still owning my own implementation. That balance between individual delivery and team throughput is the part of this course I expect to use immediately.</p>
     </section>
 
     <p style="text-align:center; margin-top:1rem;"><a href="../courses.html">← Back to Courses</a></p>

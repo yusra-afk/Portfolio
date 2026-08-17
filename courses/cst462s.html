@@ -4,23 +4,27 @@
   <link rel="icon" type="image/svg+xml" href="../images/yusra.svg">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CST 462S — Race, Gender & Computing</title>
+  <title>CST 462S - Race, Gender &amp; Class in the Digital World</title>
   <link rel="stylesheet" href="/css/styles.css">
   <script src="/js/script.js" defer></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Space+Mono&display=swap');
     body { background: #0a0a0f; color: #f0f0f5; font-family: 'Space Grotesk', sans-serif; }
     main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
-    h1 { color: #f0f0f5; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: 2rem; }
+    h1 { color: #f0f0f5; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: 0.5rem; }
+    .course-meta { font-family: 'Space Mono', monospace; font-size: 12px; color: #888896; letter-spacing: 0.08em; margin-bottom: 2rem; }
     section { background: #111118; border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem; box-shadow: none; }
     .section-label { font-family: 'Space Mono', monospace; font-size: 11px; color: #7c6dfa; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.5rem; display: block; }
     h2 { color: #f0f0f5; font-weight: 600; margin-top: 0; }
+    h3 { color: #f0f0f5; font-weight: 600; font-size: 1rem; margin-bottom: 0.4rem; }
     p, li { color: #888896; }
     a { color: #7c6dfa; }
     ul { color: #888896; }
     iframe, embed, video { border-radius: 8px; border: 1px solid rgba(255,255,255,0.07); max-width: 100%; display: block; margin-bottom: 1rem; }
     .btn, .btn-ghost { background: #7c6dfa; color: #fff; border-radius: 8px; border: none; padding: 10px 22px; font-weight: 600; text-decoration: none; display: inline-block; box-shadow: none; }
     strong { color: #f0f0f5; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1rem; }
+    .tag { font-family: 'Space Mono', monospace; font-size: 11px; color: #888896; border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; padding: 5px 12px; }
   </style>
 </head>
 <body>
@@ -28,7 +32,7 @@
   <nav aria-label="Primary">
     <a href="/index.html" class="brand-logo">ya_portfolio.js</a>
     <a href="/about.html">About</a>
-    <a href="/courses.html">Projects</a>
+    <a href="/courses.html">Coursework</a>
     <a href="/education.html">Education</a>
     <a href="/experience.html">Experience</a>
     <a href="/contact.html">Contact</a>
@@ -49,18 +53,67 @@
 </header>
 
   <main>
-    <h1>CST 462S — Race, Gender & Computing</h1>
+    <h1>CST 462S - Race, Gender &amp; Class in the Digital World</h1>
+    <p class="course-meta">FALL 2025 · GRADE: A · UPPER-DIVISION GE AREA D &amp; SERVICE LEARNING</p>
 
     <section>
       <span class="section-label">Overview</span>
       <h2>Course Overview</h2>
-      <p>Course content and project work coming soon.</p>
+      <p>This course examines how race, gender, class, and social justice shape the production and use of technology. It asks who gets access to new technologies, who is excluded from them, and how social structures reproduce inequality through the systems engineers build. The format is scenario based, combining research, discussion, and reflection with a service learning placement in the community.</p>
+      <p>Coursework centered on two major deliverables: a semester-long team research project applying social science research methods to a technology equity problem, and a service learning commitment supported by a project plan, an activity log, and a policymaker outreach report.</p>
+      <div class="tag-row">
+        <span class="tag">qualitative research</span>
+        <span class="tag">tech ethics</span>
+        <span class="tag">thematic analysis</span>
+        <span class="tag">service learning</span>
+      </div>
     </section>
 
     <section>
-      <span class="section-label">Work</span>
-      <h2>Projects &amp; Work</h2>
-      <p>Project details, demos, and write-ups coming soon. Check back after the semester wraps up!</p>
+      <span class="section-label">Outcomes</span>
+      <h2>Course Outcomes</h2>
+      <ul style="text-align: left; max-width: 800px; margin: 0 auto;">
+        <li>Analyze race, gender, and class issues in the digital world using social science vocabulary and theoretical perspectives.</li>
+        <li>Formulate research questions, select appropriate methods, and conduct original research on technology and inequality.</li>
+        <li>Examine how personal and professional identities relate to systems of power, privilege, and oppression.</li>
+        <li>Analyze how computing as a field has both perpetuated inequity and contributed to greater equity.</li>
+        <li>Apply professional codes of ethics when evaluating technology and its social impact.</li>
+        <li>Develop strategies and recommendations that work toward equity in workplaces and institutions.</li>
+      </ul>
+    </section>
+
+    <section>
+      <span class="section-label">Project</span>
+      <h2>Team Research Project: AI Diagnostic Tools &amp; Patient Trust</h2>
+      <p><strong>Role:</strong> Team lead and primary author. Team of four: Yusra B. Ashar, Tariq Kakar, Jason Smevog, and Yui Nguyen.</p>
+      <p><strong>Research question:</strong> How can transparency be improved in AI-based diagnostic tools?</p>
+      <p>AI systems now read radiology images, flag pathology, and generate predictive clinical models with high accuracy, but accuracy has not produced patient acceptance. Most of these models behave as black boxes that return a result without exposing the reasoning behind it. Our study investigated whether transparency and explainability can close that trust gap, and who is left behind when they are missing.</p>
+
+      <h3>Method</h3>
+      <p>We built a literature review around explainable AI in healthcare, then designed a standardized eight-question interview protocol administered identically to every participant. The team collected responses from 14 people spanning medical professionals, technology professionals, and general users with no technical background, ranging in age from 17 to 49. I conducted nine of the 14 interviews, recruiting participants through professional networks including LinkedIn, and led the thematic analysis that organized the raw responses into comparable themes across the three user groups.</p>
+
+      <h3>Findings</h3>
+      <p>Transparency turned out to mean different things to different groups. Medical professionals framed it as patient safety and clinical accountability, and reacted most strongly to AI errors. Technology professionals framed it structurally, around data quality and system logic, and described a verify-then-trust posture. General users framed it as honest, plain communication and freedom from hidden content. Despite those differences, every group converged on the same requirement: explainable reasoning and clear communication.</p>
+      <ul style="text-align: left; max-width: 800px; margin: 0 auto;">
+        <li>Step-by-step reasoning and visual explanations were the most requested features across all three groups.</li>
+        <li>Source citations and evidence trails were treated as a precondition for trust, not an enhancement.</li>
+        <li>Transparency alone was not sufficient. Participants wanted human verification protocols, including one suggestion of a physician e-signature confirming an AI result before use.</li>
+        <li>Medical topics were held to a higher standard than general-purpose AI. Participants who skipped verification on low-risk questions reported double-checking anything medical.</li>
+      </ul>
+
+      <h3>Recommendations</h3>
+      <p>We recommended integrating explainable AI into diagnostic systems, disclosing limitations openly including uncertainty levels and known gaps in training data, giving users the option to opt out of data collection, and constraining medical responses to vetted clinical sources rather than general web training data. We also recommended that explanations adapt to the audience, since detailed charts serve clinicians while plain summaries serve patients. Transparency needs to be contextual rather than uniform.</p>
+
+      <p style="margin-top:1.5rem;"><strong>Full Research Paper:</strong></p>
+      <embed src="../assets/CST462S_AI_Diagnostic_Tools_and_Patient_Trust.pdf" width="100%" height="600px" type="application/pdf" />
+      <p><a href="../assets/CST462S_AI_Diagnostic_Tools_and_Patient_Trust.pdf" target="_blank">Download PDF</a></p>
+    </section>
+
+    <section>
+      <span class="section-label">Reflection</span>
+      <h2>What I Took From This Course</h2>
+      <p>The most useful thing this course gave me was a vocabulary for something I had already run into as a developer: a system can be technically correct and still fail the people using it. Our interviews made that concrete. Accuracy did not buy trust from a single participant group. Visible reasoning did.</p>
+      <p>That has changed how I build. In Tayseer, my Islamic Q&amp;A chatbot, every answer is grounded in a retrieved source rather than generated freely, because an answer a user cannot trace is not worth much regardless of how confident it sounds. Leading a four-person research team also meant setting a shared interview protocol, keeping the timeline on track, and synthesizing other people's data honestly rather than toward a conclusion I expected, which is closer to real engineering work than most coursework gets.</p>
     </section>
 
     <p style="text-align:center; margin-top:1rem;"><a href="../courses.html">← Back to Courses</a></p>

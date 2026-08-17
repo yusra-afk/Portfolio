@@ -4,7 +4,7 @@
   <link rel="icon" type="image/svg+xml" href="../images/yusra.svg">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CST 370 — Introduction to Analysis of Algorithms</title>
+  <title>CST 370 – Design & Analysis of Algorithms</title>
   <link rel="stylesheet" href="/css/styles.css">
   <script src="/js/script.js" defer></script>
   <style>
@@ -12,14 +12,14 @@
     body { background: #0a0a0f; color: #f0f0f5; font-family: 'Space Grotesk', sans-serif; }
     main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
     h1 { color: #f0f0f5; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: 2rem; }
-    section { background: #111118; border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem; box-shadow: none; }
+    section { background: #111118; border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem; }
     .section-label { font-family: 'Space Mono', monospace; font-size: 11px; color: #7c6dfa; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.5rem; display: block; }
     h2 { color: #f0f0f5; font-weight: 600; margin-top: 0; }
     p, li { color: #888896; }
     a { color: #7c6dfa; }
     ul { color: #888896; }
-    iframe, embed, video { border-radius: 8px; border: 1px solid rgba(255,255,255,0.07); max-width: 100%; display: block; margin-bottom: 1rem; }
-    .btn, .btn-ghost { background: #7c6dfa; color: #fff; border-radius: 8px; border: none; padding: 10px 22px; font-weight: 600; text-decoration: none; display: inline-block; box-shadow: none; }
+    embed { border-radius: 8px; border: 1px solid rgba(255,255,255,0.07); max-width: 100%; display: block; margin-bottom: 1rem; }
+    .btn { background: #7c6dfa; color: #fff; border-radius: 8px; border: none; padding: 10px 22px; font-weight: 600; text-decoration: none; display: inline-block; }
     strong { color: #f0f0f5; }
   </style>
 </head>
@@ -28,7 +28,7 @@
   <nav aria-label="Primary">
     <a href="/index.html" class="brand-logo">ya_portfolio.js</a>
     <a href="/about.html">About</a>
-    <a href="/courses.html">Projects</a>
+    <a href="/courses.html">Coursework</a>
     <a href="/education.html">Education</a>
     <a href="/experience.html">Experience</a>
     <a href="/contact.html">Contact</a>
@@ -49,28 +49,70 @@
 </header>
 
   <main>
-    <h1>CST 370 — Introduction to Analysis of Algorithms</h1>
+    <h1>CST 370 – Design & Analysis of Algorithms</h1>
 
     <section>
       <span class="section-label">Overview</span>
       <h2>Course Overview</h2>
-      <p>Course content and project work coming soon.</p>
+      <p>
+        CST 370 covers fundamental <strong>algorithm design techniques</strong> and the data
+        structures that support them. The course builds intuition for measuring and comparing
+        algorithm efficiency, then applies that framework across a range of problem-solving
+        strategies used throughout computer science.
+      </p>
+      <p>
+        Topics included asymptotic analysis (Big-O, Ω, Θ), hash tables, heaps, trees, graphs,
+        sorting and searching, brute force, divide-and-conquer, decrease-and-conquer,
+        transform-and-conquer, space-time tradeoffs, dynamic programming, and greedy algorithms.
+      </p>
     </section>
 
     <section>
-      <span class="section-label">Document</span>
-      <h2>Extra Credit Document</h2>
-      <embed src="../assets/CST 370 EC Doc.pdf" width="100%" height="600px" type="application/pdf" />
-      <p><a href="../assets/CST 370 EC Doc.pdf" target="_blank">Download PDF</a></p>
+      <span class="section-label">Outcomes</span>
+      <h2>Course Outcomes</h2>
+      <ul>
+        <li>Measure algorithm efficiency and represent it using asymptotic notation.</li>
+        <li>Apply design techniques including brute force, divide-and-conquer, decrease-and-conquer, transform-and-conquer, greedy, and dynamic programming.</li>
+        <li>Explain sorting algorithms including heapsort, merge sort, and quicksort.</li>
+        <li>Implement and analyze tree and graph algorithms: DFS, BFS, minimum spanning trees, and shortest path.</li>
+      </ul>
     </section>
 
     <section>
-      <span class="section-label">Work</span>
-      <h2>Projects &amp; Work</h2>
-      <p>Project details, demos, and write-ups coming soon. Check back after the semester wraps up!</p>
+      <span class="section-label">Project</span>
+      <h2>Sudoku Validator — Hash-Based Solution in C++</h2>
+      <p>
+        A group extra credit project implementing a <strong>9×9 Sudoku board validator</strong>
+        in C++. The program reads a completed board from a file and determines whether it is
+        valid — no repeated values in any row, column, or 3×3 subgrid — outputting either
+        <code style="color:#f0f0f5; background:rgba(255,255,255,0.07); padding:2px 6px; border-radius:4px;">Valid!</code>
+        or
+        <code style="color:#f0f0f5; background:rgba(255,255,255,0.07); padding:2px 6px; border-radius:4px;">Invalid!</code>.
+      </p>
+      <p>
+        The algorithm uses C++'s <strong><code style="color:#f0f0f5; background:rgba(255,255,255,0.07); padding:2px 6px; border-radius:4px;">unordered_set</code></strong>
+        for hash-based duplicate detection — inserting each cell value and treating a failed
+        insertion as a duplicate. This gives <strong>O(1) average-case</strong> insert and lookup,
+        avoiding the need for nested comparison loops.
+      </p>
+      <p>
+        My contribution: designed and implemented the full suite of <strong>input/output test cases</strong>,
+        covering valid boards, row duplicates, column duplicates, and subgrid violations
+        across 5 test files verified against expected output with <code style="color:#f0f0f5; background:rgba(255,255,255,0.07); padding:2px 6px; border-radius:4px;">diff</code>.
+      </p>
+      <p style="margin-top: 1.25rem;">
+        <a href="../assets/CST_370_EC_Doc.pdf" target="_blank" class="btn">View Project Document (PDF)</a>
+      </p>
     </section>
 
-    <p style="text-align:center; margin-top:1rem;"><a href="../courses.html">← Back to Courses</a></p>
+    <section>
+      <span class="section-label">Documentation</span>
+      <h2>Extra Credit Submission</h2>
+      <embed src="../assets/CST_370_EC_Doc.pdf"
+             width="100%" height="600px" type="application/pdf" />
+    </section>
+
+    <p><a href="/courses.html">← Back to Courses</a></p>
   </main>
 
 <footer>
